@@ -390,6 +390,12 @@ main, nav {
     position: relative;
     
 }
+/* Fallback per browser che non supportano webp */
+@supports not (background-image: url('../../../assets/images/compressed/backinfo-1920.webp')) {
+    .info-section {
+        background-image: url('../../../assets/images/original/backinfo-1920.jpg');
+    }
+}
 
 
 .info-content {
@@ -888,6 +894,7 @@ main, nav {
   /* Info Section Mobile */
   .info-section {
     padding: 40px 20px;
+    background-attachment: scroll;  /* rimuove l'effetto parallax su mobile */
 }
 
 
