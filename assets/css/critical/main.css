@@ -235,7 +235,7 @@ main.scrolled {
     gap: 15px;
 }
 
-.card-btn {
+.card-btn, .card-btn2 {
     padding: 10px 25px;
     border: 1px solid rgba(0,0,0,0.2);
     font-family: "Prata", sans-serif;
@@ -734,7 +734,7 @@ main.scrolled {
         right: 15px;
     }
 
-    .card-btn{
+    .card-btn, .card-btn2{
         border: none;
         border-bottom: none;
         border-left: none;
