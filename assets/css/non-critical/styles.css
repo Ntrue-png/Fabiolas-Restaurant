@@ -996,6 +996,7 @@ main, nav {
     /* Info Section Mobile */
     .info-section {
         padding: 40px 20px;
+        background-attachment: scroll;  /* rimuove l'effetto parallax su mobile */
     }
 
     .info-content {
