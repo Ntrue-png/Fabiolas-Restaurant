@@ -469,6 +469,9 @@ a:hover
         margin-top: 50px; /* Riduciamo il margin top */
        
     }
+    .info-section {
+        background-attachment: scroll;  /* rimuove l'effetto parallax su mobile */
+    }
 
     .contact-info-content {
         flex-direction: column; /* Non column-reverse */
@@ -1173,6 +1176,12 @@ a:hover
     background-repeat:repeat-x;
     background-attachment: fixed;
     text-align: center;
+}
+/* Fallback per browser che non supportano webp */
+@supports not (background-image: url('../../../assets/images/compressed/backinfo-1920.webp')) {
+    .info-section {
+        background-image: url('../../../assets/images/original/backinfo-1920.jpg');
+    }
 }
 
 .info-content {
