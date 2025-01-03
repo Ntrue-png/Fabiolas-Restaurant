@@ -1,0 +1,80 @@
+# Abilita il modulo rewrite
+RewriteEngine On
+
+# Gestione MIME types
+AddType image/webp .webp
+AddType image/jpeg .jpg .jpeg
+AddType image/png .png
+
+# Headers per CORS e caching
+<IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+    
+    # Cache control per immagini
+    <FilesMatch "\.(jpg|jpeg|png|webp)$">
+        Header set Cache-Control "max-age=31536000, public"
+    </FilesMatch>
+</IfModule>
+
+# Directory delle immagini
+<Directory "/assets/images">
+    Options +Indexes
+    Allow from all
+    Require all granted
+</Directory>
+
+# Gestione errori 404 per immagini
+ErrorDocument 404 /404.html
+
+# Compressione GZIP
+<IfModule mod_deflate.c>
+    # Compress HTML, CSS, JavaScript, Text, XML and fonts
+    AddOutputFilterByType DEFLATE application/javascript
+    AddOutputFilterByType DEFLATE application/x-javascript
+    AddOutputFilterByType DEFLATE text/css
+    AddOutputFilterByType DEFLATE text/html
+    AddOutputFilterByType DEFLATE text/javascript
+    AddOutputFilterByType DEFLATE text/plain
+    AddOutputFilterByType DEFLATE text/xml
+    AddOutputFilterByType DEFLATE application/json
+    AddOutputFilterByType DEFLATE application/xml
+    AddOutputFilterByType DEFLATE application/font-woff
+    AddOutputFilterByType DEFLATE application/font-woff2
+    AddOutputFilterByType DEFLATE image/svg+xml
+
+    # Remove browser bugs
+    BrowserMatch ^Mozilla/4 gzip-only-text/html
+    BrowserMatch ^Mozilla/4\.0[678] no-gzip
+    BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+    Header append Vary User-Agent
+</IfModule>
+
+# Ottimizzazione della cache
+<IfModule mod_expires.c>
+    ExpiresActive On
+    
+    # Immagini
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    
+    # CSS, JavaScript
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    
+    # Fonts
+    ExpiresByType font/woff2 "access plus 1 year"
+    ExpiresByType font/woff "access plus 1 year"
+</IfModule>
+
+# Headers per il caching
+<IfModule mod_headers.c>
+    <FilesMatch "\.(ico|jpg|jpeg|png|webp|gif|css|js|woff2?)$">
+        Header set Cache-Control "public, max-age=31536000"
+    </FilesMatch>
+</IfModule>
+
+# Compressione Brotli se disponibile, altrimenti GZIP
+<IfModule mod_brotli.c>
+    AddOutputFilterByType BROTLI_COMPRESS text/html text/plain text/xml text/css text/javascript application/javascript application/x-javascript application/json application/xml
+</IfModule> 

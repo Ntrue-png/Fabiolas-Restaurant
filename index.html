@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+<head>
+    <!-- Ottimizzazione Critical Path -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Willkommen bei Fabiola's Restaurant - Authentische italienische Küche im Golfclub Erding-Grünbach">
+    
+     <!-- Preload ottimizzato per LCP -->
+     <link rel="preload" 
+     as="image" 
+     href="assets/images/compressed/slide1-1920.webp" 
+     type="image/webp"
+     media="(min-width: 1200px)"
+     fetchpriority="high">
+
+<link rel="preload" 
+     as="image" 
+     href="assets/images/compressed/slide1-1200.webp" 
+     type="image/webp"
+     media="(min-width: 800px) and (max-width: 1199px)"
+     fetchpriority="high">
+
+<link rel="preload" 
+     as="image" 
+     href="assets/images/compressed/slide1-800.webp" 
+     type="image/webp"
+     media="(max-width: 799px)"
+     fetchpriority="high">
+
+
+    
+    <!-- Preconnect per risorse esterne - consolidati -->
+<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<!-- Preload delle risorse critiche -->
+<link rel="preload" href="assets/css/critical/main.css" as="style" onload="this.rel='stylesheet'">
+
+    
+    <!-- Critical CSS -->
+    <link rel="stylesheet" href="assets/css/critical/main.css">
+    
+    <!-- Non-critical CSS -->
+    <link rel="stylesheet" href="assets/css/non-critical/styles.css" 
+    media="print" onload="this.media='all'">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" 
+          rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" 
+          media="print" onload="this.media='all'">
+
+    <link rel="icon" sizes="480x480" href="assets/images/compressed/titlelogo.png" type="image/png">
+    <title>Fabiola's Restaurant - Italienische Küche in Erding</title>
+
+  
+    <!-- Open Graph tags - TODO: Aggiornare con URL del dominio quando disponibile -->
+    <meta property="og:title" content="Fabiola's Restaurant - Italienische Küche in Erding">
+    <meta property="og:description" content="Authentische italienische Küche im Golfclub Erding-Grünbach">
+    <meta property="og:image" content="assets/images/compressed/titlelogo.png">
+    <meta property="og:type" content="website">
+    <!-- TODO: Aggiungere og:url quando il dominio sarà disponibile -->
+    <!-- <meta property="og:url" content="https://www.tuodominio.com"> -->
+</head>
+<body>
+    <div class="initial-overlay">
+       
+        <div class="choice-cards">
+            <!-- Card Restaurant -->
+            <div class="choice-card restaurant">
+                <img src="assets/images/compressed/titlelogo-cards.webp" alt="Fabiola's Logo" class="card-logo">
+               <h2><a href="pages/restaurant.html" class="menu-link">| RESTAURANT |</a></h2>
+                <div class="card-buttons">
+                    <a href="tel:+4981229599246" class="card-btn book-btn">RESERVIEREN</a>
+                </div>
+            </div>
+    
+            <!-- Card Events -->
+            <div class="choice-card events">
+                <button class="close-overlay">
+                    <i class="fas fa-times"></i>
+                </button>
+                <img src="assets/images/compressed/titlelogo-cards.webp" alt="Fabiola's Logo" class="card-logo">
+                <h2><a href="pages/event.html" class="menu-link">| EVENTS |</a></h2>
+                <div class="card-buttons">
+                    <a href="tel:+4981229599246" class="card-btn book-btn">RESERVIEREN</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main>
+        <div class="logo-container">
+            <a href="index.html">
+                <picture>
+                    <source srcset="assets/images/compressed/titlelogo.webp" type="image/webp">
+                    <source srcset="assets/images/compressed/titlelogo.png" type="image/png">
+                    <img src="assets/images/compressed/titlelogo.png" 
+                         alt="Fabiola's Italian Restaurant Logo" 
+                         class="logo-img" 
+                         width="130" 
+                         height="auto"
+                         fetchpriority="high">
+                </picture>
+            </a>
+        </div>
+        <!-- Spostiamo l'hamburger qui -->
+        <button class="hamburger-menu" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </main>
+     <!-- Aggiungi questo dopo il main -->
+     <div class="section-nav">
+        <span class="nav-line"></span>
+        <ul>
+            <li>
+                <a href="#hero" class="section-link active">
+                    
+                    <span class="label">HOME</span>
+                </a>
+            </li>
+            <li>
+                <a href="#philosophy" class="section-link">
+                   
+                    <span class="label">WILKOMMEN</span>
+                </a>
+            </li>
+            <li>
+                <a href="#menu" class="section-link">
+                    
+                    <span class="label">MENÜ</span>
+                </a>
+            </li>
+            <li>
+                <a href="#events" class="section-link">
+                    
+                    <span class="label">EVENT</span>
+                </a>
+            </li>
+            <li>
+                <a href="#info" class="section-link">
+                    
+                    <span class="label">INFO</span>
+                </a>
+            </li>
+        </ul>
+        <span class="nav-line"></span>
+    </div>
+    <div class="call-banner">
+        <a href="tel:+4981229599246">
+            <i class="fas fa-phone"></i>
+            Rufen Sie uns an
+        </a>
+    </div>
+   
+    <!-- Aggiungi il menu mobile qui -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-bar"></div>
+        <div class="mobile-menu-bar"></div>
+        <div class="mobile-menu-bar"></div>
+        <div class="mobile-menu-bar"></div>
+        <ul>
+            <li><a href="index.html" class="active">HOME</a></li>
+            <li><a href="pages/restaurant.html">RESTAURANT</a></li>
+            <li><a href="pages/menu.html">MENÜ</a></li>
+            <li><a href="pages/event.html">EVENT</a></li>
+            <li><a href="pages/contact.html">KONTAKT</a></li>
+        </ul>
+    </div>
+    
+    <nav>
+        <ul class="nav-menu">
+            <li><a href="index.html" class="active">HOME</a></li>
+            <li><a href="pages/restaurant.html">RESTAURANT</a></li>
+            <li><a href="pages/menu.html">MENÜ</a></li>
+            <li><a href="pages/event.html">EVENT</a></li>
+            <li><a href="pages/contact.html">KONTAKT</a></li>
+        </ul>
+    </nav>
+    <div class="contact-bar">
+        <i class="fas fa-phone" style="color: white;"></i>
+        <a href="tel:+4981229599246" class="phone-number">+49 8122 9599246</a>
+    </div>
+
+    <div class="slideshow-container" id="hero">
+        <div class="scroll-indicator">
+        <div class="chevron-container">
+            <a href="#philosophy">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+            <a href="#philosophy">Scroll</a> 
+        </div>
+            <picture>
+                <source 
+                    media="(min-width: 1200px)"
+                    srcset="assets/images/compressed/slide1-1920.webp"
+                    type="image/webp"
+                    sizes="100vw"
+                    width="1920"
+                    height="1080">
+                <source 
+                    media="(min-width: 800px)"
+                    srcset="assets/images/compressed/slide1-1200.webp"
+                    type="image/webp"
+                    sizes="100vw"
+                    width="1200"
+                    height="675">
+                <img 
+                    srcset="assets/images/compressed/slide1-800.webp"
+                    alt="Restaurant Image 1"
+                    width="800"
+                    height="450"
+                    sizes="100vw"
+                    fetchpriority="high"
+                    decoding="async">
+            </picture>
+        </div>
+        <div class="slide">
+            <picture>
+                <source 
+                    media="(min-width: 1200px)"
+                    srcset="assets/images/compressed/slide2-1920.webp"
+                    type="image/webp"
+                    sizes="100vw"
+                    width="1920"
+                    height="1080"
+                   >
+                <source 
+                    media="(min-width: 800px)"
+                    srcset="assets/images/compressed/slide2-1200.webp"
+                    type="image/webp"
+                    sizes="100vw"
+                width="1200"
+                height="675">
+                <img srcset="assets/images/compressed/slide2-800.webp" 
+                     alt="Restaurant Image 2" 
+                     width="800" 
+                     height="450"
+                     sizes="100vw"
+                     loading="lazy"
+                     decoding="async">
+            </picture>
+        </div>
+    </div>
+   
+    <div class="philosophy-section" id="philosophy">
+        <div class="philosophy-content">
+            <picture>
+                <source 
+                    media="(min-width: 1200px)"
+                    srcset="assets/images/compressed/foof-1920.webp"
+                    type="image/webp"
+                    sizes="100vw"
+                width="1920"
+                height="1280">
+                <source 
+                    media="(min-width: 800px)"
+                    srcset="assets/images/compressed/foof-1200.webp"
+                    type="image/webp"
+                    sizes="100vw"
+                width="1200"
+                height="800">
+                <img srcset="assets/images/compressed/foof-800.webp" 
+                     alt="Philosophy Image" 
+                     class="philosophy-image" 
+                     width="800" 
+                     height="533"
+                     sizes="100vw"
+                     loading="lazy"
+                     decoding="async">
+            </picture>
+            <div class="philosophy-text-container">
+                <div class="philosophy-text">
+                    
+                    <h2>Wilkommen bei</h2>
+                    <h1 class="animate-right">Fabiola's Restaurant</h1>
+                    <p>
+                        Im Fabiola's Restaurant glauben wir, dass Essen ein Erlebnis ist, das Menschen und Kulturen verbindet.
+                        Wir verwenden nur frische und saisonale Zutaten, um authentische Gerichte zu kreieren, die die 
+                        italienische Küchentradition zelebrieren. Entdecken Sie die Liebe und Leidenschaft, die wir in jedes Gericht stecken.
+                    </p>    
+        </div>
+            </div>
+        </div>
+    </div>
+    <div class="terrace-section" id="terrace">
+        <div class="terrace-content">
+            <div class="terrace-text-container">
+            <div class="terrace-text">
+               
+                <h2 class="animate-left">Die Terrasse</h2>
+                <p>
+                    Eingebettet im Grünen bietet die Terrasse ein einzigartiges Erlebnis mit Blick auf die Hügel und den Golfclub Erding-Grünbach.
+                    Ein idealer Ort für ein Mittagessen, Abendessen oder einen Cocktail in Gesellschaft. Perfekt für private Veranstaltungen
+                    oder einen Moment der Entspannung.
+                </p>
+            </div>
+            </div>
+            <picture>
+                <source 
+                    media="(min-width: 1200px)"
+                    srcset="assets/images/compressed/veranda-1920.webp"
+                    type="image/webp"
+                    sizes="100vw"
+                    width="1920"
+                    height="1280">
+                <source 
+                    media="(min-width: 800px)"
+                    srcset="assets/images/compressed/veranda-1200.webp"
+                    type="image/webp"
+                    sizes="100vw"
+                    width="1200"
+                    height="800">
+                <img srcset="assets/images/compressed/veranda-800.webp" 
+                     alt="Terrace Image" 
+                     class="terrace-image" 
+                     width="800" 
+                     height="533"
+                     sizes="100vw"
+                     loading="lazy"
+                     decoding="async">
+            </picture>
+          
+        </div>
+    </div>
+  <!-- Aggiungi questa sezione HTML prima del contact-banner -->
+  <div class="menu-section" id="menu">
+    
+    <div class="menu-overlay"></div>
+    <h2 class="menu-title">| Die Küche |</h2>
+
+    <div class="menu-container">
+        <!-- Prima immagine menu -->
+        <div class="menu-item">
+            <a href="pages/menu.html">
+                <div class="menu-background"></div>
+                <picture>
+                    <source 
+                        media="(min-width: 1200px)"
+                        srcset="assets/images/compressed/MENU-IMG/immagine1.webp"
+                        type="image/webp"
+                        sizes="100vw"
+                        width="1920"
+                        height="1280">
+                    <source 
+                        media="(min-width: 800px)"
+                        srcset="assets/images/compressed/MENU-IMG/immagine1.webp"
+                        type="image/webp"
+                        sizes="100vw"
+                        width="1200"
+                        height="800">
+                    <img srcset="assets/images/compressed/MENU-IMG/immagine1.webp"
+                         alt="Menu Item - Italian Cuisine" 
+                         class="menu-image" 
+                         width="800" 
+                         height="600"
+                         sizes="100vw"
+                         loading="lazy"
+                         decoding="async">
+                </picture>
+            </a>
+        </div>
+
+        <!-- Seconda immagine menu -->
+        <div class="menu-item">
+            <a href="pages/menu.html">
+                <div class="menu-background"></div>
+                <picture>
+                    <source 
+                        media="(min-width: 1200px)"
+                        srcset="assets/images/compressed/MENU-IMG/immagine2.webp"
+                        type="image/webp"
+                        sizes="100vw"
+                        width="1920"
+                        height="1280">
+                    <source 
+                        media="(min-width: 800px)"
+                        srcset="assets/images/compressed/MENU-IMG/immagine2.webp"
+                        type="image/webp"
+                        sizes="100vw"
+                        width="1200"
+                        height="800">
+                    <img srcset="assets/images/compressed/MENU-IMG/immagine2.webp"
+                         alt="Menu Item - Special Dishes" 
+                         class="menu-image" 
+                         width="800" 
+                         height="600"
+                         sizes="100vw"
+                         loading="lazy"
+                         decoding="async">
+                </picture>
+            </a>
+        </div>
+
+        <!-- Terza immagine menu -->
+        <div class="menu-item">
+            <div class="menu-background"></div>
+            <a href="pages/menu.html">
+                
+                <picture>
+                    <source 
+                        media="(min-width: 1200px)"
+                        srcset="assets/images/compressed/MENU-IMG/immagine3.webp"
+                        type="image/webp"
+                        sizes="100vw"
+                        width="1920"
+                        height="1280">
+                    <source 
+                        media="(min-width: 800px)"
+                        srcset="assets/images/compressed/MENU-IMG/immagine3.webp"
+                        type="image/webp"
+                        sizes="100vw"
+                        width="1200"
+                        height="800">
+                    <img srcset="assets/images/compressed/MENU-IMG/immagine3.webp"
+                         alt="Menu Item - Desserts" 
+                         class="menu-image" 
+                         width="800" 
+                         height="600"
+                         sizes="100vw"
+                         loading="lazy"
+                         decoding="async">
+                </picture>
+            </a>
+        </div>
+    </div>
+    <div class="menu-link-container">
+        <a href="pages/menu.html" class="menu-link">| MENÜ |</a>
+    </div>
+</div>
+
+<!-- Aggiungi questa sezione dopo contact-info-section -->
+<div class="events-section" id="events">
+    <div class="events-container">
+        <div class="events-overlay">
+            <a class="events-title">EXKLUSIVE EVENTS</a>
+            <a href="pages/event.html" class="events-button">EVENT</a>
+        </div>
+    </div>
+</div>
+<!-- INFO SECTION -->
+ <div class="info-section" id="info">
+        
+        <div class="info-content">
+            <div class="info-block address">
+                <h3>ADRESSE</h3>
+                <p>Kellerberg 13</p>
+                <p>85461 Bockhorn</p>
+                <p>Golfclub Erding-Grünbach</p>
+            </div>
+    
+            <div class="info-block hours">
+                <h3>ÖFFNUNGSZEITEN</h3>
+                <p>Mo - So: 9:00 - 22:00</p>
+                <p>Warme Küche: 11:30 - 21:30</p>
+            </div>
+    
+            <div class="info-block contact">
+                <h3>FÜR INFORMATIONEN</h3>
+                <p>Bitte kontaktieren Sie uns:</p>
+                <a href="mailto:fabiolasrestaurant.info@gmail.com">fabiolasrestaurant.info@gmail.com</a>
+                <a href="tel:+4981229599246">+49 8122 9599246</a>
+            </div>
+            <a href="../pages/contact.html" class="kontakt-button">KONTAKT</a>
+        </div>
+    </div>
+     
+
+    <div class="contact-banner">
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="logo-section">
+                    <a href="index.html">
+                        <picture>
+                            <source srcset="assets/images/compressed/titlelogo.webp" type="image/webp">
+                            <source srcset="assets/images/compressed/titlelogo.png" type="image/png">
+                            <img src="assets/images/compressed/titlelogo.png" 
+                                 alt="Fabiola's Logo" 
+                                 width="200" 
+                                 height="auto">
+                        </picture>
+                    </a>
+                    <!-- Social icons per mobile -->
+                    <div class="social-wrapper-mobile">
+                        <div class="footer-social">
+                            <a href="https://instagram.com/tuoprofilo" target="_blank" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://facebook.com/tuoprofilo" target="_blank" aria-label="Facebook">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-info-grid">
+                    <div class="opening-hours">
+                        <span>ÖFFNUNGSZEITEN</span>
+                        <span class="time-span">Mo - So: 9:00 - 22:00</span>
+                        <span>Warme Küche: 11:30 - 21:30</span>
+                    </div>
+                    <div class="contact-separator"></div>
+                    <div class="reservation-info">
+                        <span>RESERVIERUNGEN</span>
+                        <a href="tel:+4981229599246" class="contact-link">+49 8122 9599246</a>
+                        <a href="mailto:fabiolasrestaurant.info@gmail.com">fabiolasrestaurant.info@gmail.com</a>
+                    </div>
+                    <div class="contact-separator"></div>
+                    <div class="location-info">
+                        <span>WO WIR SIND</span>
+                        <div itemscope itemtype="http://schema.org/Restaurant">
+                            <a href="https://www.google.com/maps?q=Kellerberg+13,+85461+Bockhorn" target="_blank" class="address-link">
+                                <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                    <span itemprop="streetAddress">Kellerberg 13</span>,
+                                    <span itemprop="postalCode">85461</span>
+                                    <span itemprop="addressLocality">Bockhorn</span>
+                                </span>
+                            </a>
+                            <span itemprop="parentOrganization" itemscope itemtype="http://schema.org/SportsClub">
+                                <a href="https://www.golf-erding.de/" target="_blank" style="display: block; ">
+                                    <span itemprop="name">Golfclub Erding-Grünbach</span> 
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Aggiungi un div separatore prima dei social -->
+            <div class="separator"></div>
+            
+            <!-- Wrapper per i social -->
+            <div class="social-wrapper">
+                <div class="footer-social">
+                    <a href="https://instagram.com/tuoprofilo" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://facebook.com/tuoprofilo" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="legal-info-container">
+        <div class="legal-info">
+            
+            <p>
+                Fabiola's Restaurant di Fabiola Alfì | USt-IdNr: [Umsatzsteuer-ID]
+                <br>
+                Geschäftssitz: Kellerberg 13, 85461 Bockhorn | Handelsregister: [Nummer falls vorhanden]
+                <br>
+                <a href="../pages/datenschutz.html" style="color: #ffffff; text-decoration: underline;">Datenschutzerklärung</a> | 
+                <a href="../pages/cookies.html" style="color: #ffffff; text-decoration: underline;">Cookie-Richtlinie</a>
+            </p>
+        </div>
+        </div>
+        
+    </div>
+    <div id="cookie-banner" class="cookie-banner">
+        <p style="margin-bottom: 10px;">
+            Diese Website verwendet Cookies, um Ihnen die bestmögliche Nutzung unserer Website zu gewährleisten.
+            <a href="/cookies" style="color: #ab9d4d;">Mehr erfahren</a>
+        </p>
+        <button onclick="acceptCookies()" style="
+            background-color: #ab9d4d;
+            color: white;
+            border: none;
+            padding: 8px 20px;
+            cursor: pointer;
+            margin-right: 10px;
+        ">Akzeptieren</button>
+        <button onclick="rejectCookies()" style="
+            background-color: transparent;
+            color: white;
+            border: 1px solid white;
+            padding: 8px 20px;
+            cursor: pointer;
+        ">Ablehnen</button>
+    </div>
+
+   
+   
+    <div class="call-banner">
+        <div class="contact-buttons">
+            <a href="tel:+4981229599246">
+                <i class="fas fa-phone"></i>
+                <span>Rufen Sie uns an</span>
+            </a>
+            <a href="mailto:fabiolasrestaurant.info@gmail.com">
+                <i class="fas fa-envelope"></i>
+                <span>E-Mail senden</span>
+            </a>
+        </div>
+    </div>
+   
+   <!-- Script -->
+   <script defer src="assets/js/critical/section-nav.js"></script>
+   <script defer src="assets/js/critical.min.js"></script>
+   <script defer src="assets/js/non-critical.min.js"></script>
+</body>
+</html>
+
