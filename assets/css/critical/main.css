@@ -189,7 +189,6 @@ main.scrolled {
 .choice-card h2 {
     color: rgb(0, 0, 0);
     font-size: 0.9rem;
-    
     letter-spacing: 0.3em;
     margin: 25px 0;
     font-weight: 500;
@@ -197,7 +196,6 @@ main.scrolled {
 .choice-card .menu-link {
     color: rgb(0, 0, 0);          /* Colore nero di default */
     text-decoration: none;
-    font-weight: bold;
     font-family: "Prata", sans-serif;
     font-size: 0.9rem;
     letter-spacing: 0.3em;
@@ -248,8 +246,6 @@ main.scrolled {
     text-decoration: none;
     letter-spacing: 0.1em;
     font-size: 0.8rem;
-    
-    border-radius: 2px;
 }
 
 .main-btn:hover {
@@ -682,16 +678,23 @@ main.scrolled {
 }
 @media (max-width: 768px) {
     .choice-cards {
-        width: 100%;
+        width:500px;
         height: auto;
         display: flex;
         padding: 20px;
+        gap: 0;
+    }
+    .close-overlay {
+        margin-top: 0;
     }
 
+    .close-overlay i {
+        font-size: 1.2rem;
+    }
     .choice-card {
-        width: 50% !important;  /* Forza la larghezza al 50% */
-        height: 350px;
-        padding: 10px;
+        width: 180px !important;  /* Forza la larghezza al 50% */
+        height: 400px;
+        padding: 0;
         opacity: 1 !important;  /* Forza l'opacità a 1 */
         position: static;
         animation: none !important;  /* Disabilita le animazioni */
@@ -700,31 +703,42 @@ main.scrolled {
     .choice-card.restaurant,
     .choice-card.events {
         position: static;
-        width: 50% !important;  /* Forza la larghezza al 50% */
-        opacity: 1 !important;  /* Forza l'opacità a 1 */
+        width: 50%;  /* Forza la larghezza al 50% */
+        opacity: 1;  /* Forza l'opacità a 1 */
     }
 
     /* Aggiustiamo gli elementi interni */
     .card-logo {
-        width: 80px;
+        width: 120px;
         margin: 10px auto;
     }
 
     .choice-card h2 {
-        font-size: 0.7rem;
-        margin: 15px 0;
+        margin: 2px 0;
+       
     }
     .choice-card .menu-link {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
+        margin: 10px 0;
+        letter-spacing: 0.1em;
+        border:none;
     }
 
     .card-buttons {
-        bottom: 15px;
+        border: 1px solid rgba(0,0,0,0.2);
+        border-bottom: none;
+        border-left: none;
+        border-right: none;
+        bottom: 30px;
         left: 15px;
         right: 15px;
     }
 
-    .card-btn {
+    .card-btn{
+        border: none;
+        border-bottom: none;
+        border-left: none;
+        border-right: none;
         padding: 8px 20px;
         font-size: 0.7rem;
     }
