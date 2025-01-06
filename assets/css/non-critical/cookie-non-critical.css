@@ -61,83 +61,230 @@ main, nav {
     color: #ab9d4d;
 }
 
-/* Stili per il contenuto */
-h1 {
-    color: #000;
-    font-size: 2.5rem;
+
+
+/*==============================================
+2. CONTACT PAGE
+==============================================*/
+.contact-page-container {
+    margin-top: 180px;
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*==============================================
+3. CONTACT INFO SECTION
+==============================================*/
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.contact-info-section {
+    padding: 30px;
+}
+
+.contact-info-section h2 {
+    font-size: 2rem;
     margin-bottom: 30px;
+    color: #202020;
 }
 
-h2 {
+.contact-info-item {
+    margin-bottom: 25px;
+}
+
+.contact-info-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #ab9d4d;
+}
+
+.contact-info-item p, 
+.contact-info-item a {
+    font-size: 1.1rem;
+    line-height: 1.6;
     color: #333;
-    font-size: 1.8rem;
-    margin-top: 40px;
+    text-decoration: none;
 }
 
-p {
-    margin-bottom: 20px;
-    font-size: 0.7rem;
-}
-.section {
-    margin-bottom: 40px;
-}
-.cookie-types {
-    background: #f9f9f9;
-    padding: 20px;
-    border-radius: 5px;
-    margin: 20px 0;
+.contact-info-item a:hover {
+    color: #ab9d4d;
 }
 
-table {
+/*  ==============================================
+4. MAP SECTION
+==============================================*/
+.map-section {
     width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
+    height: 100%;
+    min-height: 400px;
 }
 
-th, td {
-    padding: 12px;
+.map-section iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/*==============================================
+5CONTACT FORM SECTION
+==============================================*/
+.contact-form-section {
+    padding: 80px 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+    color: #202020;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, 
+                transform 0.8s ease-out;
+}
+
+.contact-form-section h2.fade-up {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.form-group {
+    position: relative;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    background: transparent;
+    font-family: "Prata", sans-serif;
+    font-size: 1rem;
+}
+
+.form-group textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.form-group label {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    color: rgba(0,0,0,0.5);
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-bottom-color: #ab9d4d;
+}
+
+.form-group input:focus + label,
+.form-group textarea:focus + label,
+.form-group input:valid + label,
+.form-group textarea:valid + label {
+    top: -20px;
+    font-size: 0.8rem;
+    color: #ab9d4d;
+}
+
+.contact-form button {
+    align-self: center;
+    padding: 12px 40px;
+    background: transparent;
+    border: 1px solid #ab9d4d;
+    color: #202020;
+    font-family: "Prata", sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contact-form button:hover {
+    background: #ab9d4d;
+    color: white;
+}
+
+/*==============================================
+6. FAQ SECTION
+==============================================*/
+.faq-section {
+    padding: 80px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+    color: #000000;
+    opacity: 1;
+  
+}
+
+
+
+.faq-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.faq-question {
+    width: 100%;
     text-align: left;
-    border-bottom: 1px solid #ddd;
+    padding: 15px;
+    color: #000;
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgba(79, 79, 79, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1rem;
 }
 
-th {
-    background-color: #f5f5f5;
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    padding: 0 15px;
+    color: #434343;
 }
-/* Media Query Mobile */
-@media screen and (max-width: 768px) {
-    h1 {
-        font-size: 2rem;
-        margin-bottom: 20px;
-    }
 
-    h2 {
-        font-size: 1.5rem;
-        margin-top: 30px;
-    }
-
-    p {
-        font-size: 0.65rem;
-        margin-bottom: 15px;
-    }
-
-    .section {
-        margin-bottom: 30px;
-    }
-
-    .cookie-types {
-        padding: 15px;
-        margin: 15px 0;
-    }
-
-    table {
-        font-size: 0.6rem;
-        margin: 15px 0;
-    }
-
-    th, td {
-        padding: 8px;
-    }
+.faq-answer.active {
+    max-height: 200px;
+    padding: 15px;
 }
+
+.faq-icon {
+    font-size: 1.2rem;
+    min-width: 20px;
+    text-align: center;
+}
+
+
 /* ==========================================================================
    7. Contact Banner
    ========================================================================== */
@@ -295,8 +442,16 @@ th {
    11. Media Queries
    ========================================================================== */
    @media (max-width: 768px) {
-    /*==============================================
-2. CONTACT PAGE
+
+/*==============================================
+    1. FAQ SECTION
+==============================================*/    
+    .faq-section h2 {
+        font-size: 1.4rem;
+        font-weight: 100;
+    }
+/*==============================================
+    2. CONTACT PAGE
 ==============================================*/
 .contact-page-container {
     margin-top: 50px;
@@ -463,7 +618,7 @@ th {
 }
 .legal-info-container {
     width: 100vw;
-    margin-bottom: 40px;
+    margin-bottom:40px;
     margin-left: calc(-50vw + 50%);
     margin-right: calc(-50vw + 50%);
     background-color: #000000;
