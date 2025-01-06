@@ -5,17 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- Critical CSS -->
-    <link rel="stylesheet" href="../assets/css/critical/restaurant-critical.css">
+    <link rel="stylesheet" href="../assets/css/critical/restaurant-critical.css?version=1.0">
     
     <!-- Critical JS con defer -->
-    <script src="../assets/js/critical/restaurant-critical.js" defer></script>
+    <script src="../assets/js/critical/restaurant-critical.js?version=1.0" defer></script>
     
     <!-- Font Awesome e altri CSS non critici -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
     
     <!-- Non-critical CSS -->
-    <link rel="stylesheet" href="../assets/css/non-critical/restaurant-non-critical.css" 
+    <link rel="stylesheet" href="../assets/css/non-critical/restaurant-non-critical.css?version=1.0" 
           media="print" onload="this.media='all'">
 
           <!-- Icon -->
@@ -48,6 +48,22 @@
         <span></span>
     </button>
 </main>
+
+<!--Call Banner-->
+<div class="call-banner">
+    <div class="contact-buttons">
+        <a href="tel:+4981229599246">
+            <i class="fas fa-phone"></i>
+            <span>Rufen Sie uns an</span>
+        </a>
+        <a href="mailto:fabiolasrestaurant.info@gmail.com">
+            <i class="fas fa-envelope"></i>
+            <span>E-Mail senden</span>
+        </a>
+    </div>
+</div>
+
+<!--Section Nav-->
 <div class="section-nav">
     <span class="nav-line"></span>
     <ul>
@@ -79,6 +95,8 @@
     </ul>
     <span class="nav-line"></span>
 </div>
+
+
 <!-- Aggiungi il menu mobile qui -->
 <div class="mobile-menu">
     <div class="mobile-menu-bar"></div>
@@ -277,21 +295,10 @@
     <button class="cookie-reject-btn" onclick="rejectCookies()">Ablehnen</button>
 </div>
    
-<div class="call-banner">
-    <div class="contact-buttons">
-        <a href="tel:+4981229599246">
-            <i class="fas fa-phone"></i>
-            <span>Rufen Sie uns an</span>
-        </a>
-        <a href="mailto:fabiolasrestaurant.info@gmail.com">
-            <i class="fas fa-envelope"></i>
-            <span>E-Mail senden</span>
-        </a>
-    </div>
-</div>
 
 
-   <script src="../assets/js/non-critical/restaurant-non-critical.js"></script>
+
+   <script src="../assets/js/non-critical/restaurant-non-critical.js?version=1.0"></script>
  
 </body>
 </html>
