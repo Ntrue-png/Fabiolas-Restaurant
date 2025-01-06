@@ -36,14 +36,14 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 <!-- Preload delle risorse critiche -->
-<link rel="preload" href="assets/css/critical/main.css" as="style" onload="this.rel='stylesheet'">
+<link rel="preload" href="assets/css/critical/main.css?version=1.0" as="style" onload="this.rel='stylesheet'">
 
     
     <!-- Critical CSS -->
-    <link rel="stylesheet" href="assets/css/critical/main.css">
+    <link rel="stylesheet" href="assets/css/critical/main.css?version=1.0">
     
     <!-- Non-critical CSS -->
-    <link rel="stylesheet" href="assets/css/non-critical/styles.css" 
+    <link rel="stylesheet" href="assets/css/non-critical/styles.css?version=1.0" 
     media="print" onload="this.media='all'">
     
     <!-- Google Fonts -->
@@ -87,7 +87,7 @@
                 <img src="assets/images/compressed/titlelogo-cards.webp" alt="Fabiola's Logo" class="card-logo">
                 <h2><a href="pages/event.html" class="menu-link">| EVENTS |</a></h2>
                 <div class="card-buttons">
-                    <a href="tel:+4981229599246" class="card-btn book-btn">RESERVIEREN</a>
+                    <a href="tel:+4981229599246" class="card-btn2 book-btn">RESERVIEREN</a>
                 </div>
             </div>
         </div>
@@ -196,6 +196,7 @@
         </div>
             <a href="#philosophy">Scroll</a> 
         </div>
+        <div class="slide">
             <picture>
                 <source 
                     media="(min-width: 1200px)"
@@ -220,8 +221,8 @@
                     fetchpriority="high"
                     decoding="async">
             </picture>
-        </div>
-        <div class="slide">
+        
+        
             <picture>
                 <source 
                     media="(min-width: 1200px)"
@@ -599,9 +600,10 @@
     </div>
    
    <!-- Script -->
-   <script defer src="assets/js/critical/section-nav.js"></script>
-   <script defer src="assets/js/critical.min.js"></script>
-   <script defer src="assets/js/non-critical.min.js"></script>
+   <script defer src="assets/js/critical/section-nav.js?version=1.0"></script>
+   <script defer src="assets/js/critical.min.js?version=1.0"></script>
+   <script defer src="assets/js/non-critical.min.js?version=1.0"></script>
+   
 </body>
 </html>
 
