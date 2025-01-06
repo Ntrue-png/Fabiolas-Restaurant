@@ -409,7 +409,10 @@ th {
     width: 100%;
 }
 .contact-separator {
-   display: none;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(179, 164, 82);
+    margin-top: 10px;
 }
 
 .logo-section {
