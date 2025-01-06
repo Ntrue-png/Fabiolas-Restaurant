@@ -125,7 +125,7 @@ main, nav {
 
    .slide {
     position: absolute;
-    top: 0;
+    top: 0px;
     left: 0;
     width: 100%;
     height: 100%;
@@ -846,18 +846,13 @@ main, nav {
 
 
 
-     /* =====Slideshow Mobile */
-     .slideshow-container {
-        margin-top: 119px;
-        height: calc(100vh - 119px);  /* Sottrai l'altezza del margine superiore */
-        overflow: hidden;             /* Previene overflow */
-        
-     }
+ 
+
      .slide img {
          width: 100%;
          height: 100vh;
      }
-
+   
      /* ==================== Scroll Indicator ==================== */
 
      .scroll-indicator {
@@ -878,6 +873,7 @@ main, nav {
 
     .chevron-container i {
         font-size: 2rem;  /* Icona più piccola su mobile */
+       
         color: rgba(255, 255, 255, 0.95);  /* Più visibile */
         opacity: 0.8;  /* Più visibile */
         animation: fadeInOut 1.5s infinite;  /* Animazione più veloce */
@@ -894,6 +890,7 @@ main, nav {
     .philosophy-section, .terrace-section {
         min-height: auto;
         padding: 0;
+        
         text-align: center;
     }
 
