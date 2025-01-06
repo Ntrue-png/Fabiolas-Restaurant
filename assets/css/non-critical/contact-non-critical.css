@@ -475,7 +475,7 @@ gap: 0;
     margin-bottom: 0;
 }
 .contact-info-section p {
-    font-size: 0.4rem;
+    font-size: 0.7rem;
     margin-top:-14px;
     font-family: 'calserif';
 }
@@ -489,15 +489,14 @@ gap: 0;
 }
 
 .contact-info-item p {
-    
-    font-size: 0.7rem;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
 }
 .contact-info-item  a {
     
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     border-bottom:1px solid black;
 }
-
 .map-section {
     margin-top: 20px;
 }
