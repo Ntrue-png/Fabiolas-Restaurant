@@ -272,15 +272,15 @@ main, nav {
 .faq-answer {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease-out;
+    transition: max-height 0.5s ease-out, padding 0.5s ease-out;
     padding: 0 15px;
     font-size: 0.9rem;
     color: #434343;
 }
 
 .faq-answer.active {
-    max-height: 200px;
-    padding: 15px;
+    
+    padding: 15px; /* Animazione fluida anche per il padding */
 }
 
 .faq-icon {
