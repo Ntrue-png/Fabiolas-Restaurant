@@ -329,16 +329,18 @@ main.scrolled {
     background: none;
     border: none;
     cursor: pointer;
+    border-radius: 10px;
     padding: 10px;
     z-index: 1002;
 }
 
 .hamburger-menu span {
     display: block;
-    width: 25px;
+    width: 23px;
     height: 2px;
+    border-radius: 10px;
     background-color: #000;
-    margin: 3px 0;
+    margin: 2px 0;
     transition: 0.5s;
 }
 
@@ -366,7 +368,7 @@ main.scrolled {
         display: flex;
         align-items: center;
         background: white;
-        height: 120px;
+        height: 93px;
         top: 0;
         left: 0;
         width: 100%;
@@ -400,16 +402,34 @@ main.scrolled {
     }
 
     img.logo-img {
-        width: 130px;
+        width: 120px;
         height: auto;
         object-fit: cover;
         object-position: center;
         display: block;
         margin: 0;
         padding: 0;
+        margin-left: 20px;
     }
     
-
+    /* =====Slideshow Mobile */
+    .slideshow-container {
+        margin-top: 93px;
+        height: calc(100vh - 119px);  /* Sottrai l'altezza del margine superiore */
+        overflow: hidden;             /* Previene overflow */
+        height: 85vh;
+        
+     }
+     .slide::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.2);
+        pointer-events: none;
+    }
 
     /* Hamburger Menu */
     .hamburger-menu {
@@ -427,7 +447,7 @@ main.scrolled {
         z-index: 1002;
         position: fixed;  /* Cambiato da relative a fixed */
               /* Aggiunto */
-        right: 20px;     /* Aggiunto */
+        right: 10px;     /* Aggiunto */
     }
 
    hamburger-menu span {
@@ -461,133 +481,133 @@ main.scrolled {
 }
 
     /* Menu Mobile */
-    .mobile-menu {
-        position: fixed;
-        top: 0;
-        right: -100%;
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: 999;
-    }
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
 
-    /* Le quattro barre separate */
-    .mobile-menu-bar {
-        position: fixed;
-        top: 0;
-        height: 100vh;
-        width: 0;
-        transition: width 1s ease;
-    }
+/* Le quattro barre separate */
+.mobile-menu-bar {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 0;
+    transition: width 1s ease;
+}
 
-    .mobile-menu-bar:nth-child(1) {
-        left: 0;
-        background: #ffffff;
-        transition-delay: 0s;
-    }
+.mobile-menu-bar:nth-child(1) {
+    left: 0;
+    background: #ffffff;
+    transition-delay: 0s;
+}
 
-    .mobile-menu-bar:nth-child(2) {
-        left: 25%;
-        background: #fcfcfc;
-        transition-delay: 0.05s;
-    }
+.mobile-menu-bar:nth-child(2) {
+    left: 25%;
+    background: #fcfcfc;
+    transition-delay: 0.05s;
+}
 
-    .mobile-menu-bar:nth-child(3) {
-        left: 50%;
-        background: #ffffff;
-        transition-delay: 0.1s;
-    }
+.mobile-menu-bar:nth-child(3) {
+    left: 50%;
+    background: #ffffff;
+    transition-delay: 0.1s;
+}
 
-    .mobile-menu-bar:nth-child(4) {
-        left: 75%;
-        background: #ffffff;
-        transition-delay: 0.15s;
-    }
+.mobile-menu-bar:nth-child(4) {
+    left: 75%;
+    background: #ffffff;
+    transition-delay: 0.15s;
+}
 
-    /* Menu Mobile attivo */
-    .mobile-menu.active {
-        right: 0;
-    }
+/* Menu Mobile attivo */
+.mobile-menu.active {
+    right: 0;
+}
 
-    .mobile-menu.active .mobile-menu-bar {
-        width: 25%;
-    }
+.mobile-menu.active .mobile-menu-bar {
+    width: 25%;
+}
 
-    /* Contenuto del menu */
-    .mobile-menu ul {
-        position: relative;
-        z-index: 1000;
-        opacity: 0;
-        visibility: hidden;
-        list-style: none;
-        padding: 0;
-        text-align: center;
-    }
+/* Contenuto del menu */
+.mobile-menu ul {
+    position: relative;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
 
-    /* Nuova classe per l'animazione del menu */
-    .mobile-menu ul.show-menu {
-        opacity: 1;
-        visibility: visible;
-        transition: opacity 0.5s ease;
-    }
+/* Nuova classe per l'animazione del menu */
+.mobile-menu ul.show-menu {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease;
+}
 
-    .mobile-menu li {
-        margin: 2rem 0;
-        opacity: 0;
-        transform: translateX(-20px);
-        position: relative;
-        overflow: hidden;
-        transition: opacity 0.5s ease, transform 0.5s ease;
-    }
+.mobile-menu li {
+    margin: 2rem 0;
+    opacity: 0;
+    transform: translateX(-20px);
+    position: relative;
+    overflow: hidden;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
 
-    /* Effetto scia dorata */
-    .mobile-menu ul::before {
-        content: '';
-        position: absolute;
-        top: -50%;
-        left: -100%;
-        width: 200%;
-        height: 400%;
-        background: linear-gradient(
-            90deg,
-            transparent,
-            rgba(171, 157, 77, 0.2),
-            rgba(171, 157, 77, 0.4),
-            rgba(171, 157, 77, 0.2),
-            transparent
-        );
-        z-index: -1;
-    }
+/* Effetto scia dorata */
+ 
+ .mobile-menu ul::before {
+    content: '';
+    position: absolute;
+    top: -110%;
+    left: -100%;
+    width: 200%;
+    height: 400%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(171, 157, 77, 0.2),
+        rgba(171, 157, 77, 0.4),
+        rgba(171, 157, 77, 0.2),
+        transparent
+    );
+    z-index: -1;
+}
 
-    .mobile-menu ul.show-menu::before {
-        animation: shimmerIn 2s ease-in-out forwards;
-    }
+.mobile-menu ul.show-menu::before {
+    animation: shimmerIn 2s ease-in-out forwards;
+}
 
-    .mobile-menu ul.hide-menu::before {
-        animation: shimmerOut 0.5s ease-in-out forwards;
-    }
+.mobile-menu ul.hide-menu::before {
+    animation: shimmerOut 0.5s ease-in-out forwards;
+}
 
-    @keyframes shimmerIn {
-        0% { left: -200%; }
-        100% { left: 100%; }
-    }
+@keyframes shimmerIn {
+    0% { left: -200%; }
+    100% { left: 100%; }
+}
 
-    @keyframes shimmerOut {
-        0% { left: 100%; }
-        100% { left: -200%; }
-    }
+@keyframes shimmerOut {
+    0% { left: 100%; }
+    100% { left: -200%; }
+}
 
-    .mobile-menu a {
-        font-size: 1.2rem;
-        text-decoration: none;
-        color: #000;
-        font-family: "Optima", sans-serif;
-        letter-spacing: 0.25em;
-        text-transform: uppercase;
-    }
-
+.mobile-menu a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #000;
+    font-family: "Optima", sans-serif;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+}
     /* Elementi da nascondere su mobile */
     nav, .contact-bar {
         display: none;

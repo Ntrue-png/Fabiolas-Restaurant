@@ -151,18 +151,21 @@ main {
     background: none;
     border: none;
     cursor: pointer;
+    border-radius: 10px;
     padding: 10px;
     z-index: 1002;
 }
 
 .hamburger-menu span {
     display: block;
-    width: 25px;
+    width: 23px;
     height: 2px;
+    border-radius: 10px;
     background-color: #000;
-    margin: 3px 0;
+    margin: 2px 0;
     transition: 0.5s;
 }
+
 
 /* Menu mobile */
 
@@ -184,7 +187,7 @@ main {
         display: flex;
         align-items: center;
         background: white;
-        height: 120px;
+        height: 93px;
         top: 0;
         left: 0;
         width: 100%;
@@ -218,7 +221,7 @@ main {
     }
 
     img.logo-img {
-        width: 130px;
+        width: 120px;
         height: auto;
         object-fit: cover;
         object-position: center;
@@ -245,10 +248,10 @@ main {
         z-index: 1002;
         position: fixed;  /* Cambiato da relative a fixed */
               /* Aggiunto */
-        right: 20px;     /* Aggiunto */
+        right: 10px;     /* Aggiunto */
     }
-
-   hamburger-menu span {
+    
+    hamburger-menu span {
     display: block;
     width: 24px;
     height: 2px;
@@ -257,7 +260,7 @@ main {
     transition: all 0.3s ease;
     position: relative;
     transform-origin: center;
-}
+    }
 
 /* Quando è attivo (X), riduciamo i margini per la simmetria */
 .hamburger-menu.active span {
@@ -290,7 +293,7 @@ main {
         align-items: center;
         z-index: 999;
     }
-
+    
     /* Le quattro barre separate */
     .mobile-menu-bar {
         position: fixed;
@@ -299,40 +302,40 @@ main {
         width: 0;
         transition: width 1s ease;
     }
-
+    
     .mobile-menu-bar:nth-child(1) {
         left: 0;
         background: #ffffff;
         transition-delay: 0s;
     }
-
+    
     .mobile-menu-bar:nth-child(2) {
         left: 25%;
         background: #fcfcfc;
         transition-delay: 0.05s;
     }
-
+    
     .mobile-menu-bar:nth-child(3) {
         left: 50%;
         background: #ffffff;
         transition-delay: 0.1s;
     }
-
+    
     .mobile-menu-bar:nth-child(4) {
         left: 75%;
         background: #ffffff;
         transition-delay: 0.15s;
     }
-
+    
     /* Menu Mobile attivo */
     .mobile-menu.active {
         right: 0;
     }
-
+    
     .mobile-menu.active .mobile-menu-bar {
         width: 25%;
     }
-
+    
     /* Contenuto del menu */
     .mobile-menu ul {
         position: relative;
@@ -343,14 +346,14 @@ main {
         padding: 0;
         text-align: center;
     }
-
+    
     /* Nuova classe per l'animazione del menu */
     .mobile-menu ul.show-menu {
         opacity: 1;
         visibility: visible;
         transition: opacity 0.5s ease;
     }
-
+    
     .mobile-menu li {
         margin: 2rem 0;
         opacity: 0;
@@ -359,12 +362,13 @@ main {
         overflow: hidden;
         transition: opacity 0.5s ease, transform 0.5s ease;
     }
-
+    
     /* Effetto scia dorata */
-    .mobile-menu ul::before {
+     
+     .mobile-menu ul::before {
         content: '';
         position: absolute;
-        top: -50%;
+        top: -110%;
         left: -100%;
         width: 200%;
         height: 400%;
@@ -378,25 +382,25 @@ main {
         );
         z-index: -1;
     }
-
+    
     .mobile-menu ul.show-menu::before {
         animation: shimmerIn 2s ease-in-out forwards;
     }
-
+    
     .mobile-menu ul.hide-menu::before {
         animation: shimmerOut 0.5s ease-in-out forwards;
     }
-
+    
     @keyframes shimmerIn {
         0% { left: -200%; }
         100% { left: 100%; }
     }
-
+    
     @keyframes shimmerOut {
         0% { left: 100%; }
         100% { left: -200%; }
     }
-
+    
     .mobile-menu a {
         font-size: 1.2rem;
         text-decoration: none;
@@ -405,7 +409,7 @@ main {
         letter-spacing: 0.25em;
         text-transform: uppercase;
     }
-
+    
     /* Elementi da nascondere su mobile */
     nav, .contact-bar {
         display: none;
