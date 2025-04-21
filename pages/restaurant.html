@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Critical CSS -->
+    <link rel="stylesheet" href="../assets/css/critical/restaurant-critical.css">
+    
+    <!-- Critical JS con defer -->
+    <script src="../assets/js/critical/restaurant-critical.js" defer></script>
+    
+    <!-- Font Awesome e altri CSS non critici -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+    
+    <!-- Non-critical CSS -->
+    <link rel="stylesheet" href="../assets/css/non-critical/restaurant-non-critical.css" 
+          media="print" onload="this.media='all'">
+
+          <!-- Icon -->
+          <link rel="icon" sizes="480x480" href="../assets/images/compressed/titlelogo.png" type="image/png">
+
+          <!-- Title -->
+    <title>Restaurant - Fabiola's Restaurant | Erding-Grünbach</title>
+</head>
+<body>
+    <!-- MAIN HEADER -->
+    <main>
+    <div class="logo-container">
+        <a href="../index.html">
+            <picture>
+                <source srcset="../assets/images/compressed/titlelogo.webp" type="image/webp">
+                <source srcset="../assets/images/compressed/titlelogo.png" type="image/png">
+                <img src="../assets/images/compressed/titlelogo.png" 
+                     alt="Fabiola's Italian Restaurant Logo" 
+                     class="logo-img" 
+                     width="130" 
+                     height="auto"
+                     fetchpriority="high">
+            </picture>
+        </a>
+    </div>
+    <!-- Spostiamo l'hamburger qui -->
+    <button class="hamburger-menu" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+</main>
+<div class="section-nav">
+    <span class="nav-line"></span>
+    <ul>
+        <li>
+            <a href="#restaurant" class="section-link active">
+                
+                <span class="label">RESTAURANT</span>
+            </a>
+        </li>
+        <li>
+            <a href="#location" class="section-link">
+               
+                <span class="label">LOCATION</span>
+            </a>
+        </li>
+        <li>
+            <a href="#info" class="section-link">
+                
+                <span class="label">INFO</span>
+            </a>
+        </li>
+        <li>
+            <a href="#gallery" class="section-link">
+                
+                <span class="label">GALERIE</span>
+            </a>
+        </li>
+       
+    </ul>
+    <span class="nav-line"></span>
+</div>
+<!-- Aggiungi il menu mobile qui -->
+<div class="mobile-menu">
+    <div class="mobile-menu-bar"></div>
+    <div class="mobile-menu-bar"></div>
+    <div class="mobile-menu-bar"></div>
+    <div class="mobile-menu-bar"></div>
+    <ul>
+        <li><a href="../index.html">HOME</a></li>
+        <li><a href="../pages/restaurant.html" class="active">RESTAURANT</a></li>
+        <li><a href="../pages/menu.html">MENÜ</a></li>
+        <li><a href="../pages/event.html">EVENT</a></li>
+        <li><a href="../pages/contact.html">KONTAKT</a></li>
+    </ul>
+</div>
+
+<nav>
+    <ul>
+        <li><a href="../index.html">HOME</a></li>
+        <li><a href="../pages/restaurant.html" class="active">RESTAURANT</a></li>
+        <li><a href="../pages/menu.html">MENÜ</a></li>
+        <li><a href="../pages/event.html">EVENT</a></li>
+        <li><a href="../pages/contact.html">KONTAKT</a></li>
+    </ul>
+</nav>
+<div class="contact-bar">
+    <i class="fas fa-phone"></i>
+    <a href="tel:+4981229599246" class="phone-number">+49 8122 9599246</a>
+</div>
+
+<!-- RESTAURANT SECTION -->
+<section class="restaurant-section" id="restaurant">
+    <div class="restaurant-container">
+        <img src="../assets/images/compressed/contatti-1920.webp" 
+             alt="Fabiola's Restaurant" 
+             class="restaurant-img"
+             loading="lazy">
+    </div>
+</section>
+
+<!-- TITLE SECTION -->
+<section class="title-section">
+    <div class="title-container" >
+        <h2>Unser Restaurant</h2>
+        <p class="title-tagline">Wo Kulinarik und Natur sich treffen</p>
+        <div class="vertical-images">
+            <div class="vertical-img-container left">  <!-- Nuovo container -->
+            <img src="../assets/images/compressed/vertical-1.webp" alt="Restaurant detail" class="vertical-img left">
+            </div>
+            <img src="../assets/images/compressed/vertical-2.webp" alt="Restaurant detail" class="vertical-img right">
+        </div>
+    </div>
+</section>
+<!-- LOCATION SECTION -->
+<section class="location-section" id="location">
+    <div class="location-content">
+        <div class="location-text">
+            <h2>Der Standort</h2>
+            <p>Eingebettet in die malerische Landschaft des Golfclub Erding-Grünbach, bietet das Fabiola's Restaurant eine einzigartige Kombination aus exquisiter italienischer Küche und atemberaubendem Panorama. Hier verschmelzen kulinarische Handwerkskunst und die Schönheit der Natur zu einem unvergesslichen Genusserlebnis.</p>
+        </div>
+        <div class="location-image">
+            <img src="../assets/images/compressed/location-1.webp" alt="Fabiola's Restaurant Location" class="location-img">
+        </div>
+    </div>
+</section>
+
+<!-- FLOATING IMAGE -->
+<div class="floating-image-container">
+    <div class="floating-img-wrapper">
+    <img src="../assets/images/compressed/MENU-IMG/immagine3-1920.webp" 
+         alt="Fabiola's Restaurant Detail" 
+         class="floating-img">
+</div>
+
+<!-- INFO SECTION -->
+<div class="info-section" id="info">
+        
+    <div class="info-content" >
+        <div class="info-block address">
+            <h3>ADRESSE</h3>
+            <p>Kellerberg 13</p>
+            <p>85461 Bockhorn</p>
+            <p>Golfclub Erding-Grünbach</p>
+        </div>
+
+        <div class="info-block hours">
+            <h3>ÖFFNUNGSZEITEN</h3>
+            <p>Mo - So: 9:00 - 22:00</p>
+            <p>Warme Küche: 11:30 - 21:30</p>
+        </div>
+
+        <div class="info-block contact">
+            <h3>FÜR INFORMATIONEN</h3>
+            <p>Bitte kontaktieren Sie uns:</p>
+            <a href="mailto:fabiolasrestaurant.info@gmail.com">fabiolasrestaurant.info@gmail.com</a>
+            <a href="tel:+4981229599246">+49 8122 9599246</a>
+        </div>
+        <a href="../pages/contact.html" class="kontakt-button">KONTAKT</a>
+    </div>
+</div>
+ 
+
+   <!-- Contact banner -->
+<div class="contact-banner">
+    <div class="contact-container">
+        <div class="contact-info">
+            <div class="logo-section">
+                <a href="../index.html">
+                    <picture>
+                        <source srcset="../assets/images/compressed/titlelogo.webp" type="image/webp">
+                        <source srcset="../assets/images/compressed/titlelogo.png" type="image/png">
+                        <img src="../assets/images/compressed/titlelogo.png" 
+                             alt="Fabiola's Logo" 
+                             width="200" 
+                             height="auto">
+                    </picture>
+                </a>
+                <!-- Social icons per mobile -->
+                <div class="social-wrapper-mobile">
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/fabiolas_restaurant_/" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://facebook.com/tuoprofilo" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-info-grid">
+                <div class="opening-hours">
+                    <span>ÖFFNUNGSZEITEN</span>
+                    <span class="time-span">Mo - So: 9:00 - 22:00</span>
+                    <span>Warme Küche: 11:30 - 21:30</span>
+                </div>
+                <div class="contact-separator"></div>
+                <div class="reservation-info">
+                    <span>RESERVIERUNGEN</span>
+                    <a href="tel:+4981229599246" class="contact-link">+49 8122 9599246</a>
+                    <a href="mailto:fabiolasrestaurant.info@gmail.com">fabiolasrestaurant.info@gmail.com</a>
+                </div>
+                <div class="contact-separator"></div>
+                <div class="location-info">
+                    <span>WO WIR SIND</span>
+                    <div itemscope itemtype="http://schema.org/Restaurant">
+                        <a href="https://www.google.com/maps?q=Kellerberg+13,+85461+Bockhorn" target="_blank" class="address-link">
+                            <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                <span itemprop="streetAddress">Kellerberg 13</span>,
+                                <span itemprop="postalCode">85461</span>
+                                <span itemprop="addressLocality">Bockhorn</span>
+                            </span>
+                        </a>
+                        <span itemprop="parentOrganization" itemscope itemtype="http://schema.org/SportsClub">
+                            <a href="https://www.golf-erding.de/" target="_blank" style="display: block; margin-top: 5px;">
+                                <span itemprop="name">Golfclub Erding-Grünbach</span> 
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Separatore prima dei social -->
+        <div class="separator"></div>
+        
+        <!-- Wrapper per i social -->
+        <div class="social-wrapper">
+            <div class="footer-social">
+                <a href="https://www.instagram.com/fabiolas_restaurant_/" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://facebook.com/tuoprofilo" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="legal-info-container">
+    <div class="legal-info">
+        <p>
+            Fabiola's Restaurant di Fabiola Alfì | USt-IdNr: [Umsatzsteuer-ID]
+            <br>
+            Geschäftssitz: Kellerberg 13, 85461 Bockhorn | Handelsregister: [Nummer falls vorhanden]
+            <br>
+            <a href="../pages/datenschutz.html" style="color: #ffffff; text-decoration: underline;">Datenschutzerklärung</a> | 
+            <a href="../pages/cookies.html" style="color: #ffffff; text-decoration: underline;">Cookie-Richtlinie</a>
+        </p>
+    </div>
+    </div>
+</div>
+<div id="cookie-banner" class="cookie-banner">
+    <p style="margin-bottom: 10px;">
+        Diese Website verwendet Cookies, um Ihnen die bestmögliche Nutzung unserer Website zu gewährleisten.
+        <a href="/cookies" style="color: #ab9d4d;">Mehr erfahren</a>
+    </p>
+    <button class="cookie-accept-btn" onclick="acceptCookies()">Akzeptieren</button>
+    <button class="cookie-reject-btn" onclick="rejectCookies()">Ablehnen</button>
+</div>
+   
+<div class="call-banner">
+    <div class="contact-buttons">
+        <a href="tel:+4981229599246">
+            <i class="fas fa-phone"></i>
+            <span>Rufen Sie uns an</span>
+        </a>
+        <a href="mailto:fabiolasrestaurant.info@gmail.com">
+            <i class="fas fa-envelope"></i>
+            <span>E-Mail senden</span>
+        </a>
+    </div>
+</div>
+
+
+   <script src="../assets/js/non-critical/restaurant-non-critical.js"></script>
+ 
+</body>
+</html>

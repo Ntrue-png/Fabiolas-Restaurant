@@ -1,0 +1,1235 @@
+/* Navigation hover effects */
+nav a:hover {
+    color: #ab9d4d;
+    opacity: 1;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: -3px;
+    left: 50%;
+    background-color: #ab9d4d;
+    transition: opacity 0.3s ease;
+    transform: translateX(-50%);
+    opacity: 0;
+}
+
+nav a:hover::after {
+    width: 100%;
+    opacity: 1;
+}
+
+nav li a.active {
+    color: #ab9d4d;
+}
+
+nav li a.active::before {
+    content: '•';
+    display: inline-block;
+    margin-right: 5px;
+    color: #ab9d4d;
+}
+
+/* Scroll effects */
+
+
+
+/* Contact bar hover effects */
+.contact-bar i {
+    font-size: 0.75rem;
+    letter-spacing: 6px;
+    
+}
+
+.phone-number {
+    font-size: 0.75rem;
+    font-family: "Optima", sans-serif;
+    text-decoration: none;
+    letter-spacing: 6px;
+    color: inherit;
+}
+
+.phone-number:hover {
+    color: #ab9d4d;
+}
+
+
+
+
+
+/* Animations */
+
+picture {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+
+
+
+/* Slide Controls */
+.slide-controls {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.slide-controls button {
+    background: transparent;
+    border: 1px solid #ab9d4d;
+    color: #020202;
+    padding: 5px 15px;
+    margin: 0 5px;
+    cursor: pointer;
+    
+    font-family: "Prata", sans-serif;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.slide-controls button:hover {
+    background: #ab9d4d;
+    color: black;
+}
+.footer-social {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 0;
+}
+
+.footer-social a {
+    color: #000;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+/* Classe per nascondere visivamente elementi ma mantenerli accessibili agli screen reader */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* Migliorare il contrasto del testo */
+body {
+    color: #202020;
+    line-height: 1.5;
+}
+
+/* Dimensioni font responsive */
+html {
+    font-size: 16px;
+}
+
+
+/* Contrasto sufficiente per i link */
+a {
+    color: #050505;
+    
+}
+
+a:hover
+ {
+    color: #8a7e3e;
+    text-decoration: none;
+} 
+/* Media Queries */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+
+.call-banner {
+  display: none;
+}
+/* Animazioni di base */
+.animate-right, .animate-left {
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.animate-right {
+    transform: translateX(50px);
+}
+
+.animate-left {
+    transform: translateX(-50px);
+}
+
+
+
+/* MANTENERE una classe base per le transizioni comuni */
+.transition-fast {
+    transition: all 0.3s ease;
+}
+
+.transition-normal {
+    transition: all 1s ease;
+}
+
+/* MANTENERE una sola classe .visible consolidata */
+.visible {
+    opacity: 1;
+    transform: translate(0) !important;
+}
+
+.visible[class*="translateX"] {
+    transform: translateX(0);
+}
+
+.visible[class*="translateY"] {
+    transform: translateY(0);
+}
+
+/* MANTENERE una classe base per immagini con object-fit */
+.img-cover {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* AGGIORNARE le classi esistenti per utilizzare le nuove classi base */
+.contact-image-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* RIMUOVERE le versioni duplicate */
+
+/* Aggiungiamo una classe base per ottimizzare le animazioni */
+.gpu-accelerated {
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    will-change: transform, opacity;
+}
+
+/* Prefers reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* Contact Info Grid */
+
+.address-link {
+    display: block;
+}
+
+/* Legal Info */
+.legal-info-container {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    background-color: #000000;
+   }
+   .legal-info {
+    font-size: 0.7rem;
+    margin-top: 20px;
+    padding: 10px 0;
+    background-color: #000000;
+    color: #ffffff;
+    opacity: 0.9;
+    width: 100%;
+}
+
+.legal-info a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* ==========================================================================
+   7. Contact Banner
+   ========================================================================== */
+   .contact-banner {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(135deg, #ffffff, #f9f7f2, #ffffff);
+    position: relative;
+    overflow: hidden;
+    color: #000000;
+    text-align: center;
+    z-index: 1000;
+}
+.opening-hours,
+.reservation-info,
+.location-info {
+    margin-top: 50px;
+    width: 33%; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    color: #000000;
+}
+.time-span,
+.contact-link,
+.address-link
+{
+    margin-top: 42px;
+    color: #000000;
+}
+.address-link {
+    display: block;
+}
+.reservation-info a, .location-info a{
+    color: #000000;
+}
+.contact-container img {
+    width: 150px;
+    margin-left: 10px;
+}
+.contact-info {
+    display: flex;
+    font-size: 0.9vw;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.contact-info-grid {
+    display: flex;
+    gap: 5rem;
+    width: 80%;
+    margin: 0;
+    padding: 10px  10px;
+}
+
+.contact-separator {
+    width: 1px;
+    height: 160px;
+    background-color: rgb(179, 164, 82);
+    margin-top: 10px;
+}
+
+/* Cookie Banner */
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    z-index: 1000;
+    display: none;
+    z-index: 9999999;
+}
+
+.cookie-banner p {
+    margin-bottom: 10px;
+}
+
+.cookie-banner a {
+    color: #ab9d4d;
+}
+
+.cookie-banner button {
+    padding: 8px 20px;
+    cursor: pointer;
+}
+
+.cookie-banner button:first-of-type {
+    background-color: #ab9d4d;
+    color: white;
+    border: none;
+    margin-right: 10px;
+}
+
+.cookie-banner button:last-of-type {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+@media screen and (max-width: 768px) {
+    .cookie-banner {
+        z-index: 9999999;
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 768px) {
+    /* Slideshow styles */
+    .slideshow-container {
+        margin-top: 0px;
+        height: calc(100vh - 150px); /* Aggiusta per l'altezza del main mobile */
+    }
+
+    /* Philosophy section */
+    .philosophy-section {
+        padding: 20px;
+        min-height: auto;
+    }
+
+    .philosophy-content {
+        flex-direction: column-reverse;
+        gap: 20px;
+        padding: 0 20px;
+    }
+
+/* Call banner */
+.call-banner {
+    display: block;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    background: #000;
+    padding: 20px 40px;
+    z-index: 1000;
+}
+
+.contact-buttons {
+    display: flex;
+    justify-content: center;  /* Distribuisce lo spazio tra gli elementi */
+    align-items: center;
+    width: 100%;
+    gap: 9rem;   
+}
+
+.contact-buttons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;            /* Cambiato da 100% */
+    text-decoration: none;
+}
+
+.call-banner i {
+    font-size: 2.1rem;
+    color: white;
+}
+
+.call-banner a span {
+    display: none;
+}
+
+
+    /* Menu Section */
+    .menu-section {
+        
+        padding: 10px 0;
+    }
+    
+
+    .menu-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .menu-item {
+        width: 60%;
+        height: 300px;
+        
+    }
+    .menu-background {
+        width: 100%;
+        height: 100%;
+       
+    }
+
+    
+
+    .menu-title {
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+    }
+
+   
+    
+    .events-container {
+        margin-top: 50px;
+    }
+    /* Contact Info Section */
+    .contact-info-section {
+        min-height: auto; /* Rimuoviamo min-height: 100vh */
+        height: auto;     /* Lasciamo che l'altezza si adatti al contenuto */
+        padding: 0;  /* Riduciamo il padding */
+        margin-top: 50px; /* Riduciamo il margin top */
+       
+    }
+
+    .contact-info-content {
+        flex-direction: column; /* Non column-reverse */
+        gap: 0;
+    }
+
+    .contact-info-image {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        margin-top: 40px;
+        padding: 0;
+        height: 400px; /* Riduciamo l'altezza del contenitore immagini */
+    }
+
+ 
+    .contact-image-wrapper,
+    .contact-image-wrapper.first-image,
+    .contact-image-wrapper.second-image {
+        width: calc(30% - 20px);
+        height: 150%;
+        margin: 0;
+        overflow: hidden;
+    }
+    .contact-image-wrapper.first-image {
+        top: 20px;
+        width: calc(40% - 10px);
+        height: 140%;
+    }
+    .parallax-img {
+        width: 100%;
+        height: 120%;
+        object-fit: cover;
+        transform: translateY(0);
+        will-change: transform;
+    }
+
+    .contact-info-text {
+        width: 100%;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .contact-info-title {
+        font-size: 1.8rem;
+        margin: 20px 0 20px 0; /* Reset margins */
+    }
+    .contact-info-details {
+        margin-top: -30px; /* Piccolo spazio sopra i dettagli */
+    }
+
+    .contact-info-text p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    /* Contact Banner (Footer) */
+    
+    .contact-banner {
+        justify-content: space-between;
+        padding: 10px 20px;
+        z-index: 997; /* Appena sotto il main che ha 998 */
+        margin-bottom: 20px;
+        position: relative;
+    }
+
+    .contact-container {
+        padding: 0;
+        width: 100%;
+    }
+
+
+    .contact-info {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .time-span,
+    .contact-link,
+    .address-link {
+        margin-top: 22px;
+        
+       
+    }
+    /* Logo Section */
+    .logo-section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-section a {
+        display: block;
+        width: fit-content;  /* Importante! */
+        margin: 0 auto;      /* Centra l'elemento a */
+    }
+
+    .logo-section picture {
+        display: block;
+        width: fit-content;  /* Importante! */
+        margin-right: 20px;
+    }
+
+    .logo-section img {
+        display: block;
+        width: 150px;
+        height: auto;
+        margin: 0;
+    }
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        overflow: visible;
+    }
+
+    /* Info Grid */
+    .contact-info-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        width: 100%;
+        margin: 0;
+        padding: 0 20px;
+    }
+
+    
+.contact-separator {
+    width: 100%;
+    height: 1px;
+    background-color: rgb(179, 164, 82);
+    margin-top: 10px;
+}
+    /* Stile per ogni sezione info */
+    .opening-hours,
+    .reservation-info,
+    .location-info {
+        margin-top: 20px;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+        
+    }
+
+    /* Titoli delle sezioni */
+    .opening-hours span,
+    .reservation-info span:first-child,
+    .location-info span:first-child {
+        font-size: 0.8rem; /* Titoli più grandi */
+        margin-bottom: 10px;
+        
+    }
+
+    /* Testo contenuto */
+    .time-span,
+    .contact-link,
+    .address-link,
+    .reservation-info a,
+    .location-info a {
+        font-size: 0.8rem; /* Testo più grande */
+    }
+
+    /* Legal Info */
+    .legal-info-container {
+        width: 100vw;
+        margin-bottom: 45px;
+        margin-left: calc(-50vw + 50%);
+        margin-right: calc(-50vw + 50%);
+        background-color: #000000;
+    }
+    .legal-info {
+        text-align: center;
+        font-size: 0.6rem;
+        width: 100%;
+    }
+}
+
+
+/* Nascondi social mobile di default */
+.social-wrapper-mobile {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .social-wrapper-mobile {
+        display:block;
+        margin-top: 20px;
+    }
+
+    .social-wrapper-mobile .footer-social {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .social-wrapper-mobile .footer-social a {
+        font-size: 1.5rem;
+        color: #000;
+    }
+
+    /* Nascondi i social originali su mobile */
+    .social-wrapper {
+        display: none;
+    }
+}.menu-link-container {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.menu-link {
+    font-family: 'Prata', sans-serif;
+    font-size: 0.85rem;
+    color: #202020;
+    text-decoration: none;
+    letter-spacing: 0.5em;
+    transition: color 0.3s ease;
+}
+
+.menu-link:hover {
+    color: #ab9d4d;
+}
+
+@media (max-width: 768px) {
+    .menu-link-container {
+        margin-top: 20px;
+        opacity: 0;
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        display: block;
+    }
+
+    /* Scia dorata */
+    .menu-link-container::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: -100%;
+        width: 100%;
+        height: 10px;
+        background: linear-gradient(90deg, transparent, #ab9d4d64, transparent);
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+
+    .menu-link-container.animate {
+        opacity: 1;
+        animation: fadeInMenu 1s forwards;
+    }
+
+    .menu-link-container.animate::before {
+        opacity: 1;
+        animation: goldenTrail 2.5s ease-in-out forwards;
+    }
+}
+
+/* Animazioni */
+@keyframes goldenTrail {
+    0% {
+        left: -100%;
+        opacity: 1;
+    }
+    100% {
+        left: 100%;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInMenu {
+    0% {
+        opacity: 0;
+    }
+    70% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+   
+}
+@media (max-width: 768px) {
+    .cookie-banner {
+        bottom: 40px;
+    }
+}
+/* Event sections */
+
+
+
+.event-section {
+    position: relative;
+    margin-top: 100vh;
+    padding: 300px 20px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.event-content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.event-image-wrapper {
+    flex: 1;
+    max-width: 600px;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .event-content {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    .event-image-wrapper,
+    .event-description {
+        max-width: 100%;
+    }
+
+    .event-description {
+        text-align: center;
+    }
+}
+
+/* Aggiungiamo spazio per il titolo e la descrizione */
+.event-description {
+    text-align: left;
+    max-width: 450px;
+    margin-bottom: 100px;  /* Aumentato lo spazio tra descrizione e immagini */
+    padding: 0 20px;
+}
+
+.event-description h2 {
+    font-size: 1.4rem;
+    margin-bottom: 30px;  /* Aumentato lo spazio tra titolo e testo */
+    letter-spacing: 0.3em;
+    color: #202020;
+}
+
+.event-description p {
+    font-size: 0.9rem;
+    line-height: 2;
+    color: #333;
+}
+
+/* Media query per mobile */
+@media (max-width: 768px) {
+    .event-description {
+        margin-bottom: 60px;  /* Spazio ridotto su mobile */
+    }
+
+    .event-description h2 {
+        margin-bottom: 30px;  /* Spazio ridotto su mobile */
+    }
+}
+
+.event-images-container {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    padding: 0 20px;
+    max-width: 1000px;
+    margin: 0 auto 50px auto;
+}
+
+.event-image-wrapper {
+    flex: 1;
+    max-width: 400px;
+    position: relative;
+    opacity: 0;
+    transition: opacity 2s cubic-bezier(0.4, 0, 0.2, 1), 
+                transform 2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.event-image-wrapper:first-child {
+    transform: translateX(-50px);
+    transition-delay: 0.5s;
+}
+
+
+
+
+
+
+
+/* Animazioni per il titolo e le immagini */
+.fade-up {
+    animation: fadeUp 1s forwards;
+}
+
+.slide-in {
+    opacity: 1 !important;
+    transform: translateX(0) !important;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Menu Preview Section */
+.menu-preview-section {
+    padding: 200px 0;
+    margin: 10px 0;
+    background-color: #d4d4d4;
+    background-image: url('../../../assets/images/compressed/backevent-1920.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.menu-images-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.menu-image-wrapper {
+    flex: 1;
+    max-width: 400px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.menu-image-wrapper.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.menu-button-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin: 40px 0;
+}
+
+.menu-button-container,
+.call-button-container {
+    width: 150px;
+    text-align: center;
+}
+/* Aggiornare le proprietà dei bottoni */
+.menu-button,
+.call-button {
+    width: 100%;           /* Occupa tutta la larghezza del container */
+    padding: 15px 30px;
+    background: transparent;
+    border: 1px solid #a8a8a8;
+    text-decoration: none;
+    color: #202020;
+    font-family: "Prata", sans-serif;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;  /* Per allineare meglio l'icona */
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-button:hover {
+    background-color: #ab9d4d;
+    color: #ffffff;
+}
+.phone-number-menu {
+    display: none;
+}
+
+
+.call-button:hover {
+    background-color: #ab9d4d;
+    color: #ffffff;
+}
+@media (max-width: 768px) {
+    .menu-preview-section {
+        padding: 100px 0;
+        margin: 50px 0;
+        gap: 40px;
+    }
+
+    .menu-images-container {
+        flex-direction: column;
+        width: 70%;
+        
+        gap: 30px;
+    }
+
+    .menu-button-section {
+        order: -1;  /* Assicuriamoci che i bottoni siano sempre prima */
+        margin-bottom: 0;  /* Riduciamo il margine su mobile */
+        width: 100%;  /* Larghezza piena su mobile */
+        padding: 0 20px;  /* Padding laterale su mobile */
+    }
+
+    .menu-button-container,
+    .call-button-container {
+        width: 100%;  /* Bottoni a larghezza piena su mobile */
+        max-width: 200px;  /* Limitiamo comunque la larghezza massima */
+    }
+
+    .menu-image-wrapper {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    .menu-image-wrapper img {
+        width: 100%;
+        height: auto;
+    }
+}
+/* Restaurant Preview Section */
+.restaurant-preview-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../../../assets/images/compressed/backslide-event1920.webp');
+    gap: 60px;
+    padding: 150px 20px;
+    margin: 200px auto;
+    max-width: 1400px;
+}
+.mail-button-container {
+    position: absolute;
+    right: 0;
+    width: 100px;
+    margin-top: 50px;
+    text-align: center;
+}
+.mail-button {
+    width: 100%;           /* Occupa tutta la larghezza del container */
+    padding: 15px 30px;
+    background: transparent;
+    border: 1px solid #a8a8a8;
+    text-decoration: none;
+    color: #202020;
+    font-family: "Prata", sans-serif;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;  /* Per allineare meglio l'icona */
+    justify-content: center;
+    align-items: center;
+}
+.mail-button:hover {
+    background-color: #ab9d4d;
+    color: #ffffff;
+}
+
+.restaurant-slideshow {
+    flex: 1;
+    max-width: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: opacity 1s ease;
+}
+
+.slide.active {
+    opacity: 1;
+    position: relative;
+}
+.slide-dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 2;
+}
+
+.dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    border: 1px solid #000000;
+    background: transparent;
+    cursor: pointer;
+    padding: 0;
+    transition: all 0.3s ease;
+}
+
+.dot.active {
+    background: #000000;
+}
+
+.dot:hover {
+    background: rgba(171, 157, 77, 0.5);
+}
+
+.restaurant-description {
+    flex: 1;
+    max-width: 400px;
+    opacity: 0;
+    transform: translateX(30px);
+    transition: opacity 1s ease, transform 1s ease;
+    flex-direction: column;
+}
+
+.restaurant-description.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.restaurant-description h2 {
+    font-size: 1.4rem;
+    font-family: "Prata", sans-serif;
+    font-weight: 100;
+    letter-spacing: 0.4em;
+    margin-bottom: 70px;
+    color: #202020;
+}
+
+.restaurant-description p {
+    font-size: 0.9rem;
+    text-align: right;
+    line-height: 2;
+    color: #333;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .menu-images-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .menu-image-wrapper {
+        max-width: 100%;
+    }
+
+    .restaurant-preview-section {
+        flex-direction: column;
+        padding: 80px 20px;
+        margin: 50px auto;
+    }
+
+    .restaurant-slideshow,
+    .restaurant-description {
+        max-width: 100%;
+    }
+
+    .restaurant-description {
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    .event-section {
+        padding: 50px 20px;
+        margin-bottom: 50px;
+    }
+
+    .menu-preview-section {
+        background-attachment: scroll;
+        background-position: 20% 20%; /* Sposto l'immagine più in basso */
+        padding: 100px 0;
+        margin: 50px 0;
+    }
+}
+.info-section {
+    padding: 200px 20px;
+    background-color: rgb(243, 243, 243);
+    background-image: url('../../../assets/images/compressed/backinfo-1920.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat:repeat-x;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.info-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.kontakt-button {
+    width: 30%; 
+    margin-top: 100px;          /* Occupa tutta la larghezza del container */
+    padding: 15px 30px;
+    background: transparent;
+    border: 1px solid #a8a8a8;
+    text-decoration: none;
+    color: #202020;
+    font-family: "Prata", sans-serif;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;  /* Per allineare meglio l'icona */
+    justify-content: center;
+    align-items: center;
+}
+.kontakt-button:hover {
+    background-color: #ab9d4d;
+    color: #ffffff;
+}
+
+
+.info-block h3 {
+    font-family: "Prata", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 100;
+    letter-spacing: 0.25em;
+    margin-bottom: 20px;
+    color: #202020;
+}
+
+.info-block p {
+    font-family: "Optima", sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.8;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.info-block a {
+    display: block;
+    font-family: "Optima", sans-serif;
+    font-size: 0.9rem;
+    color: #202020;
+    text-decoration: none;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.info-block a:hover {
+    color: #ab9d4d;
+}
