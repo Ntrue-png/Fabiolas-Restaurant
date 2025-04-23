@@ -67,8 +67,9 @@ main, nav {
 }
 
 .menu-section h2 {
-    font-size: 1rem;
+    font-size: 1.4rem;
     font-weight: 300;
+    font-family: "Garamond", serif;
     letter-spacing: 0.2em;
     color: #000;
     text-transform: uppercase;
@@ -78,8 +79,8 @@ main, nav {
 
 .menu-item {
     display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+    flex-direction: column;
+    align-items: center;
     margin-bottom: 15px;
     position: relative;
 }
@@ -95,23 +96,32 @@ main, nav {
 }
 
 .item-name {
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: 300;
     letter-spacing: 0.1em;
-    padding-right: 10px;
-    background: linear-gradient(90deg, #ffffff 0%, #dfd5b8 30%, #ece8e1 50%, #fdefd0 90%);
+    margin-bottom: 5px;
     position: relative;
     z-index: 1;
+    text-align: center;
 }
 
 .item-price {
     font-size: 0.8rem;
     font-weight: 300;
     color: #ab9d4d;
-    padding-left: 10px;
-    background: linear-gradient(90deg, #ffffff 0%, #dfd5b8 30%, #ece8e1 50%, #fdefd0 90%);
+    margin-bottom: 8px;
     position: relative;
     z-index: 1;
+    text-align: center;
+}
+
+.item-description {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    padding: 0 10px;
+    text-align: center;
 }
 
 /* Media Query Mobile */
