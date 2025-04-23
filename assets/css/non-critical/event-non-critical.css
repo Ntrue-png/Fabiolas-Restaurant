@@ -1049,6 +1049,7 @@ a:hover
 .restaurant-slideshow {
     flex: 1;
     max-width: 400px;
+    
     position: relative;
     overflow: hidden;
 }
@@ -1144,6 +1145,7 @@ a:hover
 
     .restaurant-slideshow,
     .restaurant-description {
+        margin-top: 100px;
         max-width: 100%;
     }
 
