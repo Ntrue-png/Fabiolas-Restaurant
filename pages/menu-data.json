@@ -4,22 +4,22 @@
             "name": "Antipasti",
             "items": [
                 {
-                    "name": "Antipasto Misto Dolce Vita",
+                    "name": "Antipasto misto dolce vita",
                     "price": "16.50",
                     "description": "grillgemüse, aufschnitte, käse mix, bruschetta al pomodoro, garnelen, tomaten mozzarella"
                 },
                 {
-                    "name": "Carpaccio di Manzo",
+                    "name": "Carpaccio di manzo",
                     "price": "14.90",
                     "description": "hauchdünne scheiben vom rinderfilet mit rucola und parmesan"
                 },
                 {
-                    "name": "Vitello Tonnato",
+                    "name": "Vitello tonnato",
                     "price": "13.90"
                     
                 },
                 {
-                    "name": "BABY CALAMARI VOM GRILL P",
+                    "name": "Baby calamari vom grill p",
                     "price": "11.90",
                     "description": "auf concassé - tomaten mit aioli- dip"
                     
@@ -36,80 +36,69 @@
             ]
         },
         {
-            "name": "Primi di Pasta",
+            "name": "Primi di pasta",
             "items": [
                 {
-                    "name": "GNOCCHI ALLA SORRENTINA",
+                    "name": "Gnocchi alla sorrentina",
                     "price": "11,90",
-                    "description": "kartoffel-gnocchi mit basilikum in tomatensosse und überbackenem mozzarella",
-                    "allergens": "A-G"
+                    "description": "kartoffel-gnocchi mit basilikum in tomatensosse und überbackenem mozzarella"
                 },
                 {
-                    "name": "SPAGHETTI CARBONARA",
-                    "price": "13,50",
-                    "allergens": "A-G-C"
+                    "name": "Spaghetti carbonara",
+                    "price": "13,50"
                 },
                 {
-                    "name": "LASAGNA MEDITERRANEA",
-                    "price": "14,50",
-                    "allergens": "A-G"
+                    "name": "Lasagna mediterranea",
+                    "price": "14,50"
                 },
                 {
-                    "name": "LINGUINE SCAMPI",
+                    "name": "Linguine scampi",
                     "price": "18,90",
-                    "description": "mit gambas in bisque-sauce",
-                    "allergens": "A-B"
+                    "description": "mit gambas in bisque-sauce"
                 },
                 {
-                    "name": "PACCHERI ALLO SCOGLIO",
+                    "name": "Paccheri allo scoglio",
                     "price": "20,50",
-                    "description": "mit meeresfrüchten in weisswein-sauce",
-                    "allergens": "A-D-L"
+                    "description": "mit meeresfrüchten in weisswein-sauce"
                 }
             ]
         },
         {
-            "name": "Secondi di Carne",
+            "name": "Secondi di carne",
             "items": [
                 {
-                    "name": "SCHNITZEL VOM SCHWEIN MIT POMMES FRITES",
-                    "price": "14,90",
-                    "allergens": "A-C"
+                    "name": "Schnitzel vom schwein mit pommes frites",
+                    "price": "14,90"
                 },
                 {
-                    "name": "SALTIMBOCCA ALLA ROMANA",
+                    "name": "Saltimbocca alla romana",
                     "price": "21,90",
-                    "description": "kalbs-medaillons mit parmaschinken mit gemüse der saison, salbei, in weisswein-sauce",
-                    "allergens": "A-G-L"
+                    "description": "kalbs-medaillons mit parmaschinken mit gemüse der saison, salbei, in weisswein-sauce"
                 },
                 {
-                    "name": "TAGLIATA DI MANZO",
+                    "name": "Tagliata di manzo",
                     "price": "25,90",
-                    "description": "von der rinderlende auf einem bett aus rucola, parmesan und kirschtomaten",
-                    "allergens": "G"
+                    "description": "von der rinderlende auf einem bett aus rucola, parmesan und kirschtomaten"
                 }
             ]
         },
         {
-            "name": "Secondi di Pesce",
+            "name": "Secondi di pesce",
             "items": [
                 {
-                    "name": "DORADE VOM GRILL",
+                    "name": "Dorade vom grill",
                     "price": "22,90",
-                    "description": "mit parmesankruste, spinat und rosmarin-kartoffeln",
-                    "allergens": "G-D"
+                    "description": "mit parmesankruste, spinat und rosmarin-kartoffeln"
                 },
                 {
-                    "name": "BLUEFIN",
+                    "name": "Bluefin",
                     "price": "24,90",
-                    "description": "blauer thunfisch in pistazien-kruste mit sautierten kräuterseitlingen",
-                    "allergens": "D-Hg-L"
+                    "description": "blauer thunfisch in pistazien-kruste mit sautierten kräuterseitlingen"
                 },
                 {
-                    "name": "KING'S FISCHPLATTE",
+                    "name": "King's fischplatte",
                     "price": "25,90",
-                    "description": "gemischter fischteller des tages an beilegensalat",
-                    "allergens": "D-L"
+                    "description": "gemischter fischteller des tages an beilegensalat"
                 }
             ]
         },
@@ -117,52 +106,44 @@
             "name": "Pinse",
             "items": [
                 {
-                    "name": "MARGHERITA",
+                    "name": "Margherita",
                     "price": "10,00",
-                    "description": "tomatensosse, fior di latte, basilikum",
-                    "allergens": "A-G"
+                    "description": "tomatensosse, fior di latte, basilikum"
                 },
                 {
-                    "name": "SALAME MILANO",
+                    "name": "Salame milano",
                     "price": "11,50",
-                    "description": "tomatensosse, fior di latte mild salami, oliven",
-                    "allergens": "A-G-L"
+                    "description": "tomatensosse, fior di latte mild salami, oliven"
                 },
                 {
-                    "name": "BUFALINA",
+                    "name": "Bufalina",
                     "price": "14,90",
-                    "description": "tomatensosse, fior di latte, rucola, tomaten, büffel-mozzarella",
-                    "allergens": "A-G"
+                    "description": "tomatensosse, fior di latte, rucola, tomaten, büffel-mozzarella"
                 },
                 {
-                    "name": "CALABRESE",
+                    "name": "Calabrese",
                     "price": "13,50",
-                    "description": "tomatensosse, fior di latte, scharfe salami, rucola",
-                    "allergens": "A-G-L"
+                    "description": "tomatensosse, fior di latte, scharfe salami, rucola"
                 },
                 {
-                    "name": "REGINA",
+                    "name": "Regina",
                     "price": "12,90",
-                    "description": "tomatensosse, fior di latte prosciutto cotto, champignons",
-                    "allergens": "A-G-L"
+                    "description": "tomatensosse, fior di latte prosciutto cotto, champignons"
                 },
                 {
-                    "name": "TONNO & CIPOLLA",
+                    "name": "Tonno & cipolla",
                     "price": "13,90",
-                    "description": "tomatensosse, fior di latte thunfisch, zwiebeln",
-                    "allergens": "A-G-D"
+                    "description": "tomatensosse, fior di latte thunfisch, zwiebeln"
                 },
                 {
-                    "name": "PARADISO",
+                    "name": "Paradiso",
                     "price": "16,90",
-                    "description": "fior di latte, parmaschinken, rucola, grana kirsch-tomaten",
-                    "allergens": "A-G-L"
+                    "description": "fior di latte, parmaschinken, rucola, grana kirsch-tomaten"
                 },
                 {
-                    "name": "TERRA & SOLE",
+                    "name": "Terra & sole",
                     "price": "15,90",
-                    "description": "tomatensosse, fior di latte, gemüse der saison, balsamico-creme",
-                    "allergens": "A-G"
+                    "description": "tomatensosse, fior di latte, gemüse der saison, balsamico-creme"
                 }
             ]
         },
@@ -171,34 +152,29 @@
         "name": "Insalate",
         "items": [
             {
-                "name": "GREEN PROTEIN",
+                "name": "Green protein",
                 "price": "14,90",
-                "description": "gegrillte hähnchenbrust mit champignon auf gemischtem salat, gurken, tomaten, mit caesar- dressing",
-                "allergens": "D-A-G"
+                "description": "gegrillte hähnchenbrust mit champignon auf gemischtem salat, gurken, tomaten, mit caesar- dressing"
             },
             {
-                "name": "TUNA CLUB HOUSE",
+                "name": "Tuna club house",
                 "price": "13,50",
-                "description": "gemischter salat mit thunfisch, cherry tomaten roten zwiebeln, gekochtem ei, soja dressing",
-                "allergens": "D-E-F"
+                "description": "gemischter salat mit thunfisch, cherry tomaten roten zwiebeln, gekochtem ei, soja dressing"
             },
             {
-                "name": "HEALTHY SWING",
+                "name": "Healthy swing",
                 "price": "12,90", 
-                "description": "bunter salat mit rote-beete, feta käse, kichererbsen cashew - quinoa joghurt dressing",
-                "allergens": "G-M-Hd"
+                "description": "bunter salat mit rote-beete, feta käse, kichererbsen cashew - quinoa joghurt dressing"
             },
             {
-                "name": "SUMMER SHRIMPS",
+                "name": "Summer shrimps",
                 "price": "15,90",
-                "description": "rucola salat mit garnelen, marinierten zucchini, cherry tomaten, zitronen - vinaigrette",
-                "allergens": "B"
+                "description": "rucola salat mit garnelen, marinierten zucchini, cherry tomaten, zitronen - vinaigrette"
             },
             {
-                "name": "CHEESE & HONEY",
+                "name": "Cheese & honey",
                 "price": "14,50",
-                "description": "ziegenkäse vom grill an feldsalat, mit honig dressing und walnüssen",
-                "allergens": "M-G-Hc"
+                "description": "ziegenkäse vom grill an feldsalat, mit honig dressing und walnüssen"
             }
         ]
     },
@@ -206,14 +182,12 @@
         "name": "Dessert",
         "items": [
             {
-                "name": "TIRAMISÙ",
-                "price": "7,50",
-                "allergens": "A-G-C"
+                "name": "Tiramisù",
+                "price": "7,50"
             },
             {
-                "name": "CREMA CATALANA",
-                "price": "7,50",
-                "allergens": "A-G-C"
+                "name": "Crema catalana",
+                "price": "7,50"
             }
           
         ]
