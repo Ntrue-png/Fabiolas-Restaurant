@@ -35,6 +35,137 @@
             
             ]
         },
+        {
+            "name": "Primi di Pasta",
+            "items": [
+                {
+                    "name": "GNOCCHI ALLA SORRENTINA",
+                    "price": "11,90",
+                    "description": "kartoffel-gnocchi mit basilikum in tomatensosse und überbackenem mozzarella",
+                    "allergens": "A-G"
+                },
+                {
+                    "name": "SPAGHETTI CARBONARA",
+                    "price": "13,50",
+                    "allergens": "A-G-C"
+                },
+                {
+                    "name": "LASAGNA MEDITERRANEA",
+                    "price": "14,50",
+                    "allergens": "A-G"
+                },
+                {
+                    "name": "LINGUINE SCAMPI",
+                    "price": "18,90",
+                    "description": "mit gambas in bisque-sauce",
+                    "allergens": "A-B"
+                },
+                {
+                    "name": "PACCHERI ALLO SCOGLIO",
+                    "price": "20,50",
+                    "description": "mit meeresfrüchten in weisswein-sauce",
+                    "allergens": "A-D-L"
+                }
+            ]
+        },
+        {
+            "name": "Secondi di Carne",
+            "items": [
+                {
+                    "name": "SCHNITZEL VOM SCHWEIN MIT POMMES FRITES",
+                    "price": "14,90",
+                    "allergens": "A-C"
+                },
+                {
+                    "name": "SALTIMBOCCA ALLA ROMANA",
+                    "price": "21,90",
+                    "description": "kalbs-medaillons mit parmaschinken mit gemüse der saison, salbei, in weisswein-sauce",
+                    "allergens": "A-G-L"
+                },
+                {
+                    "name": "TAGLIATA DI MANZO",
+                    "price": "25,90",
+                    "description": "von der rinderlende auf einem bett aus rucola, parmesan und kirschtomaten",
+                    "allergens": "G"
+                }
+            ]
+        },
+        {
+            "name": "Secondi di Pesce",
+            "items": [
+                {
+                    "name": "DORADE VOM GRILL",
+                    "price": "22,90",
+                    "description": "mit parmesankruste, spinat und rosmarin-kartoffeln",
+                    "allergens": "G-D"
+                },
+                {
+                    "name": "BLUEFIN",
+                    "price": "24,90",
+                    "description": "blauer thunfisch in pistazien-kruste mit sautierten kräuterseitlingen",
+                    "allergens": "D-Hg-L"
+                },
+                {
+                    "name": "KING'S FISCHPLATTE",
+                    "price": "25,90",
+                    "description": "gemischter fischteller des tages an beilegensalat",
+                    "allergens": "D-L"
+                }
+            ]
+        },
+        {
+            "name": "Pinse",
+            "items": [
+                {
+                    "name": "MARGHERITA",
+                    "price": "10,00",
+                    "description": "tomatensosse, fior di latte, basilikum",
+                    "allergens": "A-G"
+                },
+                {
+                    "name": "SALAME MILANO",
+                    "price": "11,50",
+                    "description": "tomatensosse, fior di latte mild salami, oliven",
+                    "allergens": "A-G-L"
+                },
+                {
+                    "name": "BUFALINA",
+                    "price": "14,90",
+                    "description": "tomatensosse, fior di latte, rucola, tomaten, büffel-mozzarella",
+                    "allergens": "A-G"
+                },
+                {
+                    "name": "CALABRESE",
+                    "price": "13,50",
+                    "description": "tomatensosse, fior di latte, scharfe salami, rucola",
+                    "allergens": "A-G-L"
+                },
+                {
+                    "name": "REGINA",
+                    "price": "12,90",
+                    "description": "tomatensosse, fior di latte prosciutto cotto, champignons",
+                    "allergens": "A-G-L"
+                },
+                {
+                    "name": "TONNO & CIPOLLA",
+                    "price": "13,90",
+                    "description": "tomatensosse, fior di latte thunfisch, zwiebeln",
+                    "allergens": "A-G-D"
+                },
+                {
+                    "name": "PARADISO",
+                    "price": "16,90",
+                    "description": "fior di latte, parmaschinken, rucola, grana kirsch-tomaten",
+                    "allergens": "A-G-L"
+                },
+                {
+                    "name": "TERRA & SOLE",
+                    "price": "15,90",
+                    "description": "tomatensosse, fior di latte, gemüse der saison, balsamico-creme",
+                    "allergens": "A-G"
+                }
+            ]
+        },
         
     {
         "name": "Insalate",
@@ -68,137 +199,6 @@
                 "price": "14,50",
                 "description": "ziegenkäse vom grill an feldsalat, mit honig dressing und walnüssen",
                 "allergens": "M-G-Hc"
-            }
-        ]
-    },
-    {
-        "name": "Pinse",
-        "items": [
-            {
-                "name": "MARGHERITA",
-                "price": "10,00",
-                "description": "tomatensosse, fior di latte, basilikum",
-                "allergens": "A-G"
-            },
-            {
-                "name": "SALAME MILANO",
-                "price": "11,50",
-                "description": "tomatensosse, fior di latte mild salami, oliven",
-                "allergens": "A-G-L"
-            },
-            {
-                "name": "BUFALINA",
-                "price": "14,90",
-                "description": "tomatensosse, fior di latte, rucola, tomaten, büffel-mozzarella",
-                "allergens": "A-G"
-            },
-            {
-                "name": "CALABRESE",
-                "price": "13,50",
-                "description": "tomatensosse, fior di latte, scharfe salami, rucola",
-                "allergens": "A-G-L"
-            },
-            {
-                "name": "REGINA",
-                "price": "12,90",
-                "description": "tomatensosse, fior di latte prosciutto cotto, champignons",
-                "allergens": "A-G-L"
-            },
-            {
-                "name": "TONNO & CIPOLLA",
-                "price": "13,90",
-                "description": "tomatensosse, fior di latte thunfisch, zwiebeln",
-                "allergens": "A-G-D"
-            },
-            {
-                "name": "PARADISO",
-                "price": "16,90",
-                "description": "fior di latte, parmaschinken, rucola, grana kirsch-tomaten",
-                "allergens": "A-G-L"
-            },
-            {
-                "name": "TERRA & SOLE",
-                "price": "15,90",
-                "description": "tomatensosse, fior di latte, gemüse der saison, balsamico-creme",
-                "allergens": "A-G"
-            }
-        ]
-    },
-    {
-        "name": "Primi di Pasta",
-        "items": [
-            {
-                "name": "GNOCCHI ALLA SORRENTINA",
-                "price": "11,90",
-                "description": "kartoffel-gnocchi mit basilikum in tomatensosse und überbackenem mozzarella",
-                "allergens": "A-G"
-            },
-            {
-                "name": "SPAGHETTI CARBONARA",
-                "price": "13,50",
-                "allergens": "A-G-C"
-            },
-            {
-                "name": "LASAGNA MEDITERRANEA",
-                "price": "14,50",
-                "allergens": "A-G"
-            },
-            {
-                "name": "LINGUINE SCAMPI",
-                "price": "18,90",
-                "description": "mit gambas in bisque-sauce",
-                "allergens": "A-B"
-            },
-            {
-                "name": "PACCHERI ALLO SCOGLIO",
-                "price": "20,50",
-                "description": "mit meeresfrüchten in weisswein-sauce",
-                "allergens": "A-D-L"
-            }
-        ]
-    },
-    {
-        "name": "Secondi di Carne",
-        "items": [
-            {
-                "name": "SCHNITZEL VOM SCHWEIN MIT POMMES FRITES",
-                "price": "14,90",
-                "allergens": "A-C"
-            },
-            {
-                "name": "SALTIMBOCCA ALLA ROMANA",
-                "price": "21,90",
-                "description": "kalbs-medaillons mit parmaschinken mit gemüse der saison, salbei, in weisswein-sauce",
-                "allergens": "A-G-L"
-            },
-            {
-                "name": "TAGLIATA DI MANZO",
-                "price": "25,90",
-                "description": "von der rinderlende auf einem bett aus rucola, parmesan und kirschtomaten",
-                "allergens": "G"
-            }
-        ]
-    },
-    {
-        "name": "Secondi di Pesce",
-        "items": [
-            {
-                "name": "DORADE VOM GRILL",
-                "price": "22,90",
-                "description": "mit parmesankruste, spinat und rosmarin-kartoffeln",
-                "allergens": "G-D"
-            },
-            {
-                "name": "BLUEFIN",
-                "price": "24,90",
-                "description": "blauer thunfisch in pistazien-kruste mit sautierten kräuterseitlingen",
-                "allergens": "D-Hg-L"
-            },
-            {
-                "name": "KING'S FISCHPLATTE",
-                "price": "25,90",
-                "description": "gemischter fischteller des tages an beilegensalat",
-                "allergens": "D-L"
             }
         ]
     },
