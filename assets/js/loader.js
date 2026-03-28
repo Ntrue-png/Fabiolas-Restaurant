@@ -1,28 +1,32 @@
 // Gestore del caricamento delle risorse
 class ResourceLoader {
     constructor() {
-        this.resources = new Map();
         this.loaded = new Set();
+        // Se l'URL della pagina contiene "/pages/", dobbiamo uscire di un livello (../)
+        this.basePath = window.location.pathname.includes('/pages/') ? '../' : '';
     }
 
     async loadResource(url, type) {
-        if (this.loaded.has(url)) return;
+        // Costruisce il percorso corretto (es. ../assets/js/main.js)
+        const finalUrl = this.basePath + url;
+
+        if (this.loaded.has(finalUrl)) return;
 
         try {
             switch(type) {
                 case 'script':
-                    await this.loadScript(url);
+                    await this.loadScript(finalUrl);
                     break;
                 case 'style':
-                    await this.loadStyle(url);
+                    await this.loadStyle(finalUrl);
                     break;
                 case 'image':
-                    await this.loadImage(url);
+                    await this.loadImage(finalUrl);
                     break;
             }
-            this.loaded.add(url);
+            this.loaded.add(finalUrl);
         } catch (error) {
-            console.error(`Failed to load ${url}:`, error);
+            console.error(`Failed to load ${finalUrl}:`, error);
         }
     }
 
@@ -58,20 +62,23 @@ class ResourceLoader {
     }
 }
 
-// Utilizzo
 const loader = new ResourceLoader();
 
-// Carica risorse in base alla priorità
 document.addEventListener('DOMContentLoaded', async () => {
-    // Risorse critiche
+    // Ora i percorsi sono scritti partendo dalla cartella principale (root)
+    // Il loader aggiungerà ../ automaticamente se sei in contact.html
     await Promise.all([
         loader.loadResource('assets/js/main.js', 'script'),
         loader.loadResource('assets/css/critical/main.css', 'style')
     ]);
 
-    // Risorse non critiche
-    requestIdleCallback(() => {
-        loader.loadResource('assets/css/non-critical/styles.css', 'style');
-        
-    });
-}); 
+    if (window.requestIdleCallback) {
+        requestIdleCallback(() => {
+            loader.loadResource('assets/css/non-critical/styles.css', 'style');
+        });
+    } else {
+        setTimeout(() => {
+            loader.loadResource('assets/css/non-critical/styles.css', 'style');
+        }, 200);
+    }
+});

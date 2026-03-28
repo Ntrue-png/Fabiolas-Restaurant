@@ -4,9 +4,13 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+:root {
+    --gold: #ab9d4d;
+    --black: #000000;
+}
 body {
     font-family: "Prata", sans-serif;
+    
     background-color: white;
     overflow-y: overlay;
     min-height: 100vh;
@@ -426,4 +430,179 @@ main {
     nav, .contact-bar {
         display: none;
     }
+}
+
+/* =====================================================
+   TAB BAR + SOTTOSEZIONI — stile Nobu
+   ===================================================== */
+:root {
+    --gold: #ab9d4d;
+    --tab-h: 48px;
+}
+
+/* ── Tab bar fissa ── */
+.tab-bar-wrapper {
+    position: fixed;
+    top: 149px; /* 120px header + 35px contact-bar */
+    left: 0;
+    width: 100%;
+    z-index: 997;
+    background: #fff;
+    border-bottom: 1px solid rgba(171, 157, 77, 0.25);
+}
+
+.tab-bar {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding: 0 24px;
+}
+.tab-bar::-webkit-scrollbar { display: none; }
+
+.tab-btn {
+    flex-shrink: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0 24px;
+    height: var(--tab-h);
+    font-family: "Optima", sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: #999;
+    position: relative;
+    transition: color .25s;
+    white-space: nowrap;
+    -webkit-font-smoothing: antialiased;
+}
+
+.tab-btn::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 2px;
+    background: #ab9d4d;
+    transform: scaleX(0);
+    transition: transform .25s ease;
+}
+
+.tab-btn:hover { color: #000; }
+.tab-btn.active { color: #000; font-weight: 600; }
+.tab-btn.active::after { transform: scaleX(1); }
+
+/* Fade bordi per hint scroll orizzontale */
+.tab-bar-wrapper::before,
+.tab-bar-wrapper::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 32px;
+    height: 100%;
+    pointer-events: none;
+    z-index: 2;
+}
+.tab-bar-wrapper::before { left: 0; background: linear-gradient(to right, #fff, transparent); }
+.tab-bar-wrapper::after  { right: 0; background: linear-gradient(to left,  #fff, transparent); }
+
+/* ── Panels ── */
+.menu-panel        { display: none; }
+.menu-panel.active {
+    display: block;
+    animation: tabFadeUp .3s ease both;
+}
+
+@keyframes tabFadeUp {
+    from { opacity: 0; transform: translateY(10px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Container offset per il tab bar ── */
+.menu-container {
+    margin-top: calc(155px + var(--tab-h) + 30px) !important;
+    margin-bottom: 60px;
+}
+
+/* ── Sottosezione titolo */
+.menu-subsection-title {
+    font-family: "EB Garamond", serif;
+    font-size: 0.65rem;
+    font-weight: 400;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: #000;
+    text-align: center;
+    padding: 32px 0 16px;
+    margin-bottom: 4px;
+    border-top: 1px solid rgba(171, 157, 77, 0.3);
+}
+.item-name {
+    font-size: 0.70rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 6px;
+}
+
+.item-price {
+    margin-top:10px;
+}
+.item-description {
+    font-family: "EB Garamond", serif;
+    font-style: italic;
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.5;
+    max-width: 480px;
+}
+
+/* Prima sottosezione: niente border-top */
+.menu-section:first-child .menu-subsection-title {
+    border-top: none;
+    padding-top: 16px;
+}
+/* ── SECTION TITLE ── */
+.panel-title {
+    font-family: "EB Garamond", serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--black);
+    margin-bottom: 8px;
+}
+
+.panel-divider {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 0 auto 40px;
+    max-width: 260px;
+}
+
+.panel-divider::before,
+.panel-divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--gold), transparent);
+}
+
+.panel-divider-dot {
+    width: 5px; height: 5px;
+    border-radius: 50%;
+    background: var(--gold);
+    flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+    .tab-bar-wrapper { top: 120px; }
+    .menu-container {
+        margin-top: calc(120px + var(--tab-h) + 20px) !important;
+        margin-bottom: 80px;
+    }
+    .menu-subsection-title { font-size: 0.7rem; padding: 28px 0 14px; }
 }

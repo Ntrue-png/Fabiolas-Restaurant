@@ -4,10 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const eventsTitle = document.querySelector('.events-title');
     const menuLinkContainer = document.querySelector('.menu-link-container');
     const menuBackgrounds = document.querySelectorAll('.menu-background');
-    const hamburgerMenu = document.querySelector('.hamburger-menu');
-    const mobileMenu = document.querySelector('.mobile-menu');
-    const mobileMenuItems = document.querySelectorAll('.mobile-menu li');
-    const mobileMenuList = document.querySelector('.mobile-menu ul');
+    
 
     // Selettori per contact-info-section
     const infoText = document.querySelector('.contact-info-text');
@@ -17,31 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Selettori per philosophy e terrace animations
     const animatedElements = document.querySelectorAll('.animate-left, .animate-right');
 
-    // Hamburger menu toggle
-    hamburgerMenu?.addEventListener('click', () => {
-        hamburgerMenu.classList.toggle('active');
-        mobileMenu.classList.toggle('active');
-        
-        if (mobileMenu.classList.contains('active')) {
-            mobileMenuList.classList.add('show-menu');
-            mobileMenuList.classList.remove('hide-menu');
-            // Anima gli elementi del menu
-            mobileMenuItems.forEach((item, index) => {
-                setTimeout(() => {
-                    item.style.opacity = '1';
-                    item.style.transform = 'translateX(0)';
-                }, 200 * index);
-            });
-        } else {
-            mobileMenuList.classList.remove('show-menu');
-            mobileMenuList.classList.add('hide-menu');
-            // Reset animazioni
-            mobileMenuItems.forEach(item => {
-                item.style.opacity = '0';
-                item.style.transform = 'translateX(-20px)';
-            });
-        }
-    });
+    
 
     // Configurazione Intersection Observer
     const observerOptions = {

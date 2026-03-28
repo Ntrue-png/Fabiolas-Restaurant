@@ -4,177 +4,679 @@
             "name": "Antipasti",
             "items": [
                 {
-                    "name": "Antipasto misto dolce vita",
-                    "price": "16.50",
-                    "description": "grillgemüse, aufschnitte, käse mix, bruschetta al pomodoro, garnelen, tomaten mozzarella"
+                    "name": "POLPETTE DELLA NONNA",
+                    "price": "13.90",
+                    "description": "Fleischbällchen in Tomatensauce mit geröstetem Brot (3 Stück)"
                 },
                 {
-                    "name": "Carpaccio di manzo",
+                    "name": "BURRATA",
                     "price": "14.90",
-                    "description": "hauchdünne scheiben vom rinderfilet mit rucola und parmesan"
+                    "description": "Aus Büffel mit marinierten Sardellen, Brot Crostini und marinierten Gurken"
                 },
                 {
-                    "name": "Vitello tonnato",
-                    "price": "13.90"
+                    "name": "PARMIGIANA",
+                    "price": "15.90",
+                    "description": "Auberginen-Parmigiana (überbackene Auberginen mit Tomatensauce, Mozzarella und Parmesan)"
                     
                 },
                 {
-                    "name": "Baby calamari vom grill p",
-                    "price": "11.90",
-                    "description": "auf concassé - tomaten mit aioli- dip"
+                    "name": "POLIPO",
+                    "price": "17.90",
+                    "description": "Oktopus - Kartoffelsalat mit schwarzen Oliven"
                     
                 },
                 {
-                    "name": "Caprese",
-                    "price": "10.90",
-                    "description": "tomaten, büffel mozzarella, basilikum"
+                    "name": "TARTARE",
+                    "price": "22.90",
+                    "description": "Rindertatar mit Wachteleiern"
                     
-                }
+                },
+                {
+                "name": "ANTIPASTO DEL BRIGANTE",
+                    "price": "26.90",
+                    "description": "(empfohlen ab 2 Personen) mit süditalienischen Spezialitäten"
+            }
+
 
 
             
             ]
         },
         {
-            "name": "Primi di pasta",
+            "name": "Aperitivi",
             "items": [
                 {
-                    "name": "Gnocchi alla sorrentina",
-                    "price": "11,90",
-                    "description": "kartoffel-gnocchi mit basilikum in tomatensosse und überbackenem mozzarella"
+                    "name": "APEROL SPRITZ ",
+                    "price": "8.90",
+                    "description": "Sekt, Soda, Garnitur"
                 },
                 {
-                    "name": "Spaghetti carbonara",
-                    "price": "13,50"
+                    "name": "SARTI SPRITZ",
+                    "price": "7,50",
+                    "description": "sarti - sekt - soda - orange"
                 },
                 {
-                    "name": "Lasagna mediterranea",
-                    "price": "14,50"
+                    "name": "SORRENTO SPRITZ", 
+                    "price": "8,90",
+                    "description": "Hausgemachter Limoncello, Sekt, Soda, Garnitur"
                 },
                 {
-                    "name": "Linguine scampi",
-                    "price": "18,90",
-                    "description": "mit gambas in bisque-sauce"
-                },
-                {
-                    "name": "Paccheri allo scoglio",
-                    "price": "20,50",
-                    "description": "mit meeresfrüchten in weisswein-sauce"
+                    "name": "NEGRONI",
+                    "price": "9,90",
+                    "description": "Campari, Gin, roter Wermut, Garnitur"
                 }
             ]
         },
         {
-            "name": "Secondi di carne",
+            "name": "Analcolici",
             "items": [
                 {
-                    "name": "Schnitzel vom schwein mit pommes frites",
-                    "price": "14,90"
+                    "name": "SAN BITTER | CRODINO SPRITZ",
+                    "price": "6,90", 
+                    "description": "Crodino, Soda, Garnitur"
                 },
                 {
-                    "name": "Saltimbocca alla romana",
-                    "price": "21,90",
-                    "description": "kalbs-medaillons mit parmaschinken mit gemüse der saison, salbei, in weisswein-sauce"
+                    "name": "PINK SUNSET",
+                    "price": "7,90",
+                    "description": "Pink Grapefruit, Bitter Lemon, Basilikum, Garnitur"
                 },
                 {
-                    "name": "Tagliata di manzo",
-                    "price": "25,90",
-                    "description": "von der rinderlende auf einem bett aus rucola, parmesan und kirschtomaten"
+                    "name": "BERRY TREE",
+                    "price": "7,90",
+                    "description": "Wild Berry, Maracujasaft, Himbeerensirup, rote Früchte, Garnitur"
                 }
             ]
         },
         {
-            "name": "Secondi di pesce",
+            "name": "Acqua Minerale",
             "items": [
                 {
-                    "name": "Dorade vom grill",
-                    "price": "22,90",
-                    "description": "mit parmesankruste, spinat und rosmarin-kartoffeln"
+                    "name": "TAFELWASSER",
+                    "price": "3,80",
+                    "description": "0,4l vom fass - sprudel"
                 },
                 {
-                    "name": "Bluefin",
-                    "price": "24,90",
-                    "description": "blauer thunfisch in pistazien-kruste mit sautierten kräuterseitlingen"
+                    "name": "ACQUA MINERALE - STILL / CLASSIC",
+                    "price": "6,90",
+                    "description": "0,75l"
                 },
                 {
-                    "name": "King's fischplatte",
-                    "price": "25,90",
-                    "description": "gemischter fischteller des tages an beilegensalat"
+                    "name": "ACQUA MINERALE - STILL / CLASSIC",
+                    "price": "3,60", 
+                    "description": "0,25l"
                 }
             ]
         },
         {
-            "name": "Pinse",
+            "name": "Bevande Analcoliche",
             "items": [
                 {
-                    "name": "Margherita",
-                    "price": "10,00",
-                    "description": "tomatensosse, fior di latte, basilikum"
+                    "name": "COCA COLA",
+                    "price": "3,60",
+                    "description": "0,2l"
                 },
                 {
-                    "name": "Salame milano",
-                    "price": "11,50",
-                    "description": "tomatensosse, fior di latte mild salami, oliven"
+                    "name": "COCA COLA ZERO", 
+                    "price": "3,60",
+                    "description": "0,2l"
                 },
                 {
-                    "name": "Bufalina",
+                    "name": "FANTA",
+                    "price": "3,60", 
+                    "description": "0,2l"
+                },
+                {
+                    "name": "ALMDUDLER",
+                    "price": "4,50",
+                    "description": "0,35l"
+                },
+                {
+                    "name": "SPEZI",
+                    "price": "4,50",
+                    "description": "0,4l"
+                },
+                {
+                    "name": "ZITRONEN LIMONADE",
+                    "price": "3,90",
+                    "description": "0,5l"
+                },
+                {
+                    "name": "GOLFER",
+                    "price": "4,50",
+                    "description": "0,4l"
+                },
+                {
+                    "name": "BITTER LEMON",
+                    "price": "3,80",
+                    "description": "0,2l"
+                },
+                {
+                    "name": "TONIC WATER",
+                    "price": "3,80",
+                    "description": "0,2l"
+                },
+                {
+                    "name": "POLARA CEDRATA AUS SIZILIEN",
+                    "price": "4,90",
+                    "description": "0,3l"
+                },
+                {
+                    "name": "POLARA CHINOTTO AUS SIZILIEN",
+                    "price": "4,90",
+                    "description": "0,3l"
+                },
+                {
+                    "name": "POLARA MADARINO AUS SIZILIEN",
+                    "price": "4,90",
+                    "description": "0,3l"
+                },
+                
+                {
+                    "name": "SAN BITTER, CRODINO",
+                    "price": "4,20",
+                    "description": "0,2l"
+                }
+            ]
+        },
+        {
+            "name": "Fruchtsäfte und Schorlen",
+            "items": [
+                {
+                    "name": "FRUCHTSCHORLE",
+                    "price": "2,90",
+                    "description": "0,2l"
+                },
+                {
+                    "name": "FRUCHTSCHORLE",
+                    "price": "4,20",
+                    "description": "0,4l"
+                },
+                {
+                    "name": "SÄFTE",
+                    "price": "3,90",
+                    "description": "0,2l"
+                },
+                {
+                    "name": "SÄFTE",
+                    "price": "4,90",
+                    "description": "0,4l"
+                }
+            ]
+        },
+        {
+            "name": "Für die Runde",
+            "items": [
+                {
+                    "name": "ADELHOLZENER CLASSIC / NATURELL",
+                    "price": "2,80",
+                    "description": "0,5l"
+                },
+                {
+                    "name": "COCA COLA PET",
+                    "price": "3,50",
+                    "description": "0,5l"
+                },
+                {
+                    "name": "COCA COLA ZERO PET",
+                    "price": "3,50",
+                    "description": "0,5l"
+                },
+                {
+                    "name": "PINK GRAPEFRUIT PET",
+                    "price": "3,20",
+                    "description": "0,5l"
+                },
+                {
+                    "name": "SPORT LEMON PET",
+                    "price": "3,20",
+                    "description": "0,5l"
+                },
+                {
+                    "name": "MULTIVITAMIN PET",
+                    "price": "3,20",
+                    "description": "0,5l"
+                }
+            ]
+        },
+        {
+            "name": "Golfer-Karte",
+            "items": [
+                {
+                    "name": "PAAR WIENER",
+                    "price": "6,90",
+                    "description": "mit Breze & Senf"
+                },
+                {
+                    "name": "FISH & CHIPS",
+                    "price": "14,90", 
+                    "description": "mit Aioli-Dip"
+                },
+                {
+                    "name": "SHNITZEL",
                     "price": "14,90",
-                    "description": "tomatensosse, fior di latte, rucola, tomaten, büffel-mozzarella"
+                    "description": "Paniertes und gebratenes Schweineschnitzel mit Pommes"
                 },
                 {
-                    "name": "Calabrese",
-                    "price": "13,50",
-                    "description": "tomatensosse, fior di latte, scharfe salami, rucola"
+                    "name": "WURST SALAT",
+                    "price": "11,90",
+                    "description": "mit Breze oder Brot"
                 },
                 {
-                    "name": "Regina",
-                    "price": "12,90",
-                    "description": "tomatensosse, fior di latte prosciutto cotto, champignons"
+                    "name": "CURRY WURST",
+                    "price": "10,90",
+                    "description": "mit Pommes"
                 },
                 {
-                    "name": "Tonno & cipolla",
-                    "price": "13,90",
-                    "description": "tomatensosse, fior di latte thunfisch, zwiebeln"
-                },
-                {
-                    "name": "Paradiso",
-                    "price": "16,90",
-                    "description": "fior di latte, parmaschinken, rucola, grana kirsch-tomaten"
-                },
-                {
-                    "name": "Terra & sole",
-                    "price": "15,90",
-                    "description": "tomatensosse, fior di latte, gemüse der saison, balsamico-creme"
+                    "name": "CLUB SANDWICH",
+                    "price": "17,90",
+                    "description": "Gegrilltes Hähnchenbrustfilet, Bacon, Tomaten, Ei, Gurken-Fenchel-Sauce, serviert mit Chips"
                 }
+                
             ]
         },
-        
+        {
+            "name": "Rundenverpflegung",
+            "items": [
+                {
+                    "name": "BREZE",
+                    "price": "1,50",
+                    "description": "a"
+                },
+                {
+                    "name": "BUTTERBREZE",
+                    "price": "1,80",
+                    "description": "a-g"
+                },
+                {
+                    "name": "OBST-STÜCK",
+                    "price": "1,50"
+                },
+                {
+                    "name": "SCHOKORIEGEL / MÜSLIRIEGEL",
+                    "price": "2,00",
+                    "description": "a-e-f-g-h"
+                },
+                {
+                    "name": "BELEGTES BAGUETTE",
+                    "price": "6,90",
+                    "description": "a-e-g-m"
+                }
+            ]
+        }
+    ,
+    {
+        "name": "La Caffetteria",
+        "items": [
+            {
+                "name": "ESPRESSO",
+                "price": "2,70"
+            },
+            {
+                "name": "ESPRESSO DOPPIO",
+                "price": "4,50"
+            },
+            {
+                "name": "CAPPUCCINO",
+                "price": "3,90"
+            },
+            {
+                "name": "LATTE MACCHIATO",
+                "price": "4,50"
+            },
+            {
+                "name": "MILCHKAFFEE",
+                "price": "4,50"
+            },
+            {
+                "name": "HEISSE SCHOKOLADE MIT SAHNE",
+                "price": "4,90"
+            },
+            {
+                "name": "TASSE TEE",
+                "price": "3,50"
+            },
+            {
+                "name": "TASSE KAFFE",
+                "price": "3,20"
+            },
+            {
+                "name": "AFFOGATO AL CAFFÈ MIT VANILLE EIS",
+                "price": "4,90"
+            },
+            {
+                "name": "EISKAFFEE",
+                "price": "6,90"
+            }
+        ]
+    },
+    {
+        "name": "Digestivi",
+        "items": [
+            {
+                "name": "AMARO DEL CAPO",
+                "price": "5,90"
+            },
+            {
+                "name": "AVERNA",
+                "price": "4,90"
+            },
+            {
+                "name": "RAMAZZOTTI",
+                "price": "4,90"
+            },
+            {
+                "name": "HAUSGEMACHTER LIMONCELLO",
+                "price": "6,90"
+            },
+            {
+                "name": "GRAPPA BIANCA",
+                "price": "5,90"
+            },
+            {
+                "name": "GRAPPA AMARONE BARRIQUE",
+                "price": "8,90"
+            },
+            {
+                "name": "SAMBUCA",
+                "price": "4,90"
+            }
+        ]
+    },
+    {
+        "name": "La Birreria",
+        "items": [
+            {
+                "name": "ERDINGER BRAUHAUS HELL vom FASS",
+                "price": "4,50",
+                "description": "0,5l"
+            },
+            {
+                "name": "GRÜNBACHER WEISSBIER vom FASS",
+                "price": "4,90",
+                "description": "0,5l"
+            },
+            {
+                "name": "ERDINGER RADLER vom FASS",
+                "price": "4,50", 
+                "description": "0,5l"
+            },
+            {
+                "name": "SCHNITT vom FASS",
+                "price": "3,90"
+            },
+             {
+                "name": "ERDINGER URWEISSE",
+                "price": "4,90",
+                "description": "0,5l"
+            },
+            {
+                "name": "ERDINGER WEISSBIER",
+                "price": "4,50",
+                "description": "0,5l"
+            },
+            
+            {
+                "name": "GRÜNBACHER WEISSBIER LEICHT",
+                "price": "4,90",
+                "description": "0,5l"
+            },
+            {
+                "name": "GRÜNBACHER WEISSBIER DUNKEL",
+                "price": "4,90",
+                "description": "0,5l"
+            },
+            {
+                "name": "WEISSBIER ZITRONE",
+                "price": "4,60"
+            },
+            {
+                "name": "COLA WEISSBIER",
+                "price": "4,90"
+            },
+            {
+                "name": "MOOSER LIESL",
+                "price": "4,50",
+                "description": "0,5l"
+            },
+            {
+                "name": "MOOSER LIESL",
+                "price": "3,50",
+                "description": "0,33l a"
+            }
+            
+        ]
+    },
+    {
+        "name": "ALKOHOLFREI",
+        "items": [
+            {
+                "name": "ERDINGER HELLES ALKOHOLFREI",
+                "price": "4,50",
+                "description": "0,5l"
+            },
+            {
+                "name": "ERDINGER ALKOHOLFREI GRAPEFRUIT / ZITRONE",
+                "price": "3,90",
+                "description": "0,33l"
+            },
+            {
+                "name": "ERDINGER WEISSBIER ALKOHOLFREI",
+                "price": "4,60",
+                "description": "0,5l"
+            }
+        ]
+    }
+    ,
+    
+    {
+        "name": "Hauswein",
+        "items": [
+            {
+                "name": "HAUSWEIN ROT / WEISS",
+                "price": "5,50",
+                "description": "0,2l l"
+            },
+            {
+                "name": "WEINSCHORLE ROT / WEISS",
+                "price": "4,90",
+                "description": "0,2l l"
+            }
+        ]
+    }
+    ,
     {
         "name": "Insalate",
         "items": [
             {
-                "name": "Green protein",
-                "price": "14,90",
-                "description": "gegrillte hähnchenbrust mit champignon auf gemischtem salat, gurken, tomaten, mit caesar- dressing"
+                "name": "CUORE CALDO",
+                "price": "13,90",
+                "description": "Grüner Salat mit Apfel, Mango, gebratenem Camembert und Preiselbeeren-Marmelade"
             },
             {
-                "name": "Tuna club house",
-                "price": "13,50",
-                "description": "gemischter salat mit thunfisch, cherry tomaten roten zwiebeln, gekochtem ei, soja dressing"
-            },
-            {
-                "name": "Healthy swing",
-                "price": "12,90", 
-                "description": "bunter salat mit rote-beete, feta käse, kichererbsen cashew - quinoa joghurt dressing"
-            },
-            {
-                "name": "Summer shrimps",
+                "name": "COSTIERA",
                 "price": "15,90",
-                "description": "rucola salat mit garnelen, marinierten zucchini, cherry tomaten, zitronen - vinaigrette"
+                "description": "Grüner Salat mit grünen Bohnen, Thunfisch, Zwiebeln, Oliven, frischen Kirschtomaten und Feta-Käse"
             },
             {
-                "name": "Cheese & honey",
-                "price": "14,50",
-                "description": "ziegenkäse vom grill an feldsalat, mit honig dressing und walnüssen"
+                "name": "TRICOLORE",
+                "price": "16,90", 
+                "description": "Grüner Salat mit Parmaschinken, Walnüssen, Büffelmozzarella, frischen Kirschtomaten und Balsamico"
+                
+            },
+            {
+                "name": "MARINA ",
+                "price": "17,90",
+                "description": "Rucola Salat mit geräuchertem Lachs, Stracciatella von Burrata, Avocado und frischen Kirschtomaten"
+            
+            },
+            {
+                "name": "RUSTICA",
+                "price": "18,90",
+                "description": "Grüner Salat mit Rinderstreifen, frischen Kirschtomaten, Rucola und Parmesancreme"
+                
+            }
+        ]
+    },
+    {
+        "name": "Pinse",
+        "items": [
+            {
+                "name": "MARGHERITA",
+                "price": "10,00",
+                "description": "tomatensosse, fior di latte, basilikum"
+            },
+            {
+                "name": "TONNO",
+                "price": "13,90",
+                "description": "Tomatensauce, Fior di Latte, Thunfisch und rote Zwiebeln"
+            },
+            {
+                "name": "GIARDINIERA",
+                "price": "14,90",
+                "description": "Tomatensauce, Fior di Latte, gegrilltes Gemüse"
+                
+            },
+            {
+                "name": "NUVOLA",
+                "price": "15,90",
+                "description": "Tomatensauce, Fior di Latte, Büffelmozzarella, Kirschtomaten und Basilikumreduktion"
+            },
+            {
+                "name": "PARMA LOVE",
+                "price": "16,90",
+                "description": "Tomatensauce, Fior di Latte, Parmaschinken, Rucola, Parmesanflakes und Balsamico"
+            }
+            
+        ]
+    },
+    {
+    "name": "Pinse Speciali",
+        "items": [
+            {
+                "name": "GOLOSA",
+                "price": "14,90",
+                "description": "Fior di Latte, Kochschinken, Mascarpone und hg. marinierte eingelegte Auberginen"
+            },
+            {
+                "name": "SILANA",
+                "price": "15,90",
+                "description": "Tomatensauce, Fior di Latte, Pikante Salami und Champignons"
+            },
+            {
+                "name": "CARRETTIERA ",
+                "price": "16,90",
+                "description": "Fior di Latte, Salsiccia und scharfer neapolitanischer Steckrübenkohl"
+                
+            },
+            {
+                "name": "CIROTANA",
+                "price": "17,90",
+                "description": "Fior di Latte, Nduja aus Kalabrien, Ofenkartoffeln und Gorgonzola"
+            },
+            {
+                "name": "FRESCONA",
+                "price": "18,90",
+                "description": "Fior di Latte, Räucherlachs, Burrata-Stracciatella, knusprige Zucchini und Zitronen-Zest"
+            }
+            
+        ]
+    },
+    {
+        "name": "Primi Piatti",
+        "items": [
+            {
+                "name": "LASAGNA ZUCCA, PROVOLA E SALSICCIA",
+                "price": "14,90",
+                "description": "Ofenlasagne mit Kürbis, Provola-Käse und italienischer Wurst"
+                
+            },
+            {
+                "name": "ZITI AL RAGÙ CON BRACIOLE",
+                "price": "15,90",
+                "description": "Ofenlasagne mit Kürbis, Provola-Käse und italienischer Wurst"
+            },
+            {
+                "name": "SCIALATIELLI AI FRUTTI DI MARE",
+                "price": "19,90",
+                "description": "Frische Pasta mit Meeresfrüchten in leichter Weißweinsauce"
+            },
+            {
+                "name": "CALAMARATA SCAMPI E PISTACCHIO",
+                "price": "20,90",
+                "description": "Calamarata-Nudeln mit Scampi-Creme, ganzer Garnele, Pistaziencrunch und Tarallo-Bröseln"
+            },
+            {
+                "name": "TAGLIOLINI AL TARTUFO",
+                "price": "22,90",
+                "description": "Frische Tagliolini mit schwarzem Trüffel"
+               
+            }
+        ]
+    },
+    {
+        "name": "Secondi di Carne",
+        "items": [
+            {
+                "name": "HAMBURGER CON ́NDUJIA",
+                "price": "15,90",
+                "description": "Rindfleisch-Hamburger mit Bacon, Zwiebeln, gegrillter Aubergine, Salat, Tomate, geschmolzenem Käse und pikantem ‘Nduja aus Kalabrien"
+            },
+            {
+                "name": "SALSICCIA ALLA GRIGLIA",
+                "price": "17,90",
+                "description": "Gegrillte Fenchel-Wurst serviert mit cremiger Paprikasauce"
+                
+            },
+            {
+                "name": "ENTRECOTE ALLA GRIGLIA",
+                "price": "14,90",
+                "description": "Saftiges gegrilltes Entrecôte vom Grill anbei Rotweinreduktion"
+                
+            }
+        ]
+    },
+    {
+        "name": "Secondi di Pesce",
+        "items": [
+            {
+                "name": "ZUPPA DI PESCE",
+                "price": "24,90",
+                "description": "Fischsuppe in leicht scharfer Tomatensauce"
+            },
+            {
+                "name": "CODA DI ROSPO",
+                "price": "25,90",
+                "description": "Seeteufel im Guanciale-Mantel auf sautiertem Blattspinat mit cremiger Erdnusssauce"
+            },
+            {
+                "name": "FILETTO DI ROMBO",
+                "price": "27,90",
+                "description": "Steinbutt-Filet in mediterraner Sauce mit schwarzen Oliven, frischen Kirschtomaten, Kapern und Weißwein"
+            }
+        ]
+    },
+    {
+        "name": "Beilagen",
+        "items": [
+            {
+                "name": "NEAPOLITANISCHER LEICHT-PIKANTER STECKRÜBENKOHL",
+                "price": "4,90"
+            },
+            {
+                "name": "POMMES ODER SÜSSKARTOFFELN",
+                "price": "4,90"
+            },
+            {
+                "name": "GEMISCHTER SALAT",
+                "price": "4,90"
+            },
+            {
+                "name": "GEGRILLTES GEMÜSE",
+                "price": "4,90"
+            },
+            {
+                "name": "OFENKARTOFFELN",
+                "price": "4,90"
             }
         ]
     },
@@ -182,12 +684,19 @@
         "name": "Dessert",
         "items": [
             {
-                "name": "Tiramisù",
-                "price": "7,50"
+                "name": "TIRAMISÙ",
+                "price": "8,90",
+                "description":"Hausgemachtes Tiramisu"
             },
             {
-                "name": "Crema catalana",
-                "price": "7,50"
+                "name": "MOUSSE AL CIOCCOLATO",
+                "price": "7,90",
+                "description": "Schokoladenmousse mit Krokant, Pistazienstückchen und gesalzenem Karamell"
+            },
+            {
+                "name": "DELIZIA AL LIMONE",
+                "price": "9,90",
+                "description": "Zitronenkuchen „Delizia“ von der Amalfi-Küste"
             }
           
         ]
