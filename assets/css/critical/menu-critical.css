@@ -134,10 +134,7 @@ main {
 }
 /* Container principale */
 .menu-container {
-    max-width: 800px;
-    
-    margin: 200px auto;
-    padding: 20px;
+    margin: 50px auto;
 }
 /* Media Query Mobile */
 @media screen and (max-width: 768px) {
@@ -568,6 +565,7 @@ main {
     font-family: "EB Garamond", serif;
     font-size: 1.5rem;
     font-weight: 400;
+    margin-bottom: 40px;
     letter-spacing: 0.25em;
     text-transform: uppercase;
     text-align: center;
@@ -605,4 +603,5 @@ main {
         margin-bottom: 80px;
     }
     .menu-subsection-title { font-size: 0.7rem; padding: 28px 0 14px; }
+
 }

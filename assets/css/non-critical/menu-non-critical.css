@@ -63,26 +63,20 @@ main, nav {
 
 /* Stili per il contenuto */
 .menu-section {
-    margin-top: 10px;
+    margin-top: 50px;
     margin-bottom: 10px;
 }
 
-.menu-section h2 {
-    font-size: 1.9rem;
-    font-weight: 300;
-    font-family: "Garamond", serif;
-    letter-spacing: 0.2em;
-    color: #000;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    text-align: center;
-}
+
+
+.menu-section h2 {font-size: 1.8rem; margin-top: 20px;}
+
 
 .menu-item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     position: relative;
 }
 
@@ -96,20 +90,21 @@ main, nav {
     margin: 0 10px;
 }
 
+
 .item-name {
-    margin-top: 50px;
+    font-family: "EB Garamond", serif;
+    margin-top: 20px;
     font-size: 1.2rem;
     font-weight: 300;
     letter-spacing: 0.1em;
     margin-bottom: 5px;
     position: relative;
     z-index: 1;
-    text-align: center;
 }
 
 .item-price {
     font-size: 0.8rem;
-    margin-top: 20px;
+    margin-top: 10px;
     font-weight: 300;
     color: #ab9d4d;
     margin-bottom: 8px;
@@ -119,7 +114,7 @@ main, nav {
 }
 
 .item-description {
-    font-size: 0.9rem;
+    font-size: 1rem;
     line-height: 1.4;
     margin-top: 8px;
     margin-bottom: 15px;
@@ -163,14 +158,11 @@ main, nav {
         padding: 0;
         background: none;
     }
-
-    .item-name {
-        font-size: 1.25rem;     /* Aumentato da 0.75rem */
-        margin-bottom: 5px;
-    }
+    .panel-title{font-size: 1.2rem;}
+    .item-name {font-size: 1rem; margin-bottom: 5px; }
 
     .item-price {
-        font-size: 1.2rem;      /* Aumentato da 0.7rem */
+        font-size: 1rem;      /* Aumentato da 0.7rem */
         margin-bottom: 8px;
         color: #ab9d4d;
     }
